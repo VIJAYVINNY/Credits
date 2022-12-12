@@ -1,0 +1,31 @@
+{
+    "Details":[
+        {
+            "id":1,
+            "First name":"Vijay",
+            "Last Name":"Kumar"
+        },
+        {
+            "id":2,
+            "First name":"Ajay",
+            "Last Name":"Kumar"
+        },
+        {
+            "id":3,
+            "First name":"Sanjay",
+            "Last Name":"Kumar"
+        }
+    ],
+
+    "Salary":[
+        {
+            "id":1,
+            "Current":23456,
+            "Savings":34567
+        },
+        {"id":2,
+            "Current":23456,
+            "Savings":34567
+        }
+    ]
+}
