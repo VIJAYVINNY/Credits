@@ -18,6 +18,7 @@ import { ProductComponent } from './product/product.component';
 import { ContactsService } from 'src/services/contacts.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RestapiComponent } from './restapi/restapi.component';
+import { ShannJiComponent } from './shann-ji/shann-ji.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { RestapiComponent } from './restapi/restapi.component';
     AuthorizeComponent,
     ProductComponent,
     RestapiComponent,
+    ShannJiComponent,
     ],
 
   imports: [
