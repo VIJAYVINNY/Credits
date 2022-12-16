@@ -10,12 +10,13 @@ import { MethodsService } from 'src/services/methods.service';
 export class AuthorizeComponent implements OnInit {
 
   contactList: any
+  subjects=["C#","JAVA","SQL","MongoDB","Angular","React"]
 
   constructor(private methodService: MethodsService) {
 
     this.methodService.getContacts().subscribe((data: any) => {
       this.contactList = data;
-      // console.log("The required output is:",data);  
+      // console.log("The required output is:",data);
     });
   }
 
