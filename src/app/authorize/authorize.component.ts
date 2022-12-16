@@ -10,7 +10,8 @@ import { MethodsService } from 'src/services/methods.service';
 export class AuthorizeComponent implements OnInit {
 
   contactList: any
-  subjects=["C#","JAVA","SQL","MongoDB","Angular","React"]
+  subjects=["C#","JAVA","SQL","MongoDB","Angular","React"];
+
 
   constructor(private methodService: MethodsService) {
 
