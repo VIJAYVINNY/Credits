@@ -14,6 +14,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AuthorizeComponent } from './authorize/authorize.component';
 import { ContactsService } from 'src/services/contacts.service';
 import { HttpClientModule } from '@angular/common/http';
+import { JuniorComponent } from './junior/junior.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     PagenotfoundComponent,
     AuthorizeComponent,
+    JuniorComponent,
     ],
 
 
