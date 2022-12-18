@@ -9,7 +9,7 @@ export class ReactiveformsComponent implements OnInit {
 
   constructor() { }
 
-  topics=["C#,ASP.NET, JAVA, SQL, MongoDB"];
+
   ngOnInit(): void {
   }
 
