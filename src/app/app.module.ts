@@ -8,13 +8,10 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ChandruComponent } from './chandru/chandru.component';
 import { TodoComponent } from './todo/todo.component';
 import { LoginComponent } from './login/login.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-import { Routes,RouterModule } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AuthorizeComponent } from './authorize/authorize.component';
-import { ContactsService } from 'src/services/contacts.service';
 import { HttpClientModule } from '@angular/common/http';
-// import { JuniorComponent } from './ju?ior/junior.component';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 
 
 @NgModule({
@@ -27,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     PagenotfoundComponent,
     AuthorizeComponent,
-    // JuniorComponent,
+    ReactiveformsComponent,
+   
     ],
 
 
