@@ -8,20 +8,20 @@ import { CorporateComponent } from './corporate/corporate.component';
 import { TodoComponent } from './todo/todo.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 
 const routes: Routes = [
   // {path:'',redirectTo:'corporate',pathMatch:"full"},
 
   {path:'authorize',component:AuthorizeComponent},
-
   {path:'pagenotfound',component:PagenotfoundComponent},
-  // {path:'task',component:TaskComponent},
   {path:'login',component:LoginComponent},
   {path:'contacts',component:ContactsComponent},
   {path:'chandru',component:ChandruComponent},
   {path:'corporate',component:CorporateComponent},
   {path:'todo',component:TodoComponent},
+  {path:'Reactivecomponent',component:ReactiveformComponent},
 
 ];
 
