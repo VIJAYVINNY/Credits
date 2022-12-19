@@ -8,12 +8,11 @@ import { CorporateComponent } from './corporate/corporate.component';
 import { TodoComponent } from './todo/todo.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
-// import { HttpClientModule } from '@angular/common/http';
 
-const routes: Routes = [ 
+
+const routes: Routes = [
   // {path:'',redirectTo:'corporate',pathMatch:"full"},
-  
+
   {path:'authorize',component:AuthorizeComponent},
 
   {path:'pagenotfound',component:PagenotfoundComponent},
@@ -23,7 +22,7 @@ const routes: Routes = [
   {path:'chandru',component:ChandruComponent},
   {path:'corporate',component:CorporateComponent},
   {path:'todo',component:TodoComponent},
-  {path:'Reactiveforms',component:ReactiveformsComponent}
+
 ];
 
 
