@@ -11,7 +11,7 @@ export class ReactiveformComponent implements OnInit {
 
   subjects=["C#","ASP","JAVA","SQL","MongoDB"];
 
-userModel=new User("Vijay","vijay1021.gummadi@gmail.com",9603722638,'',"morning",true);
+userModel=new User("","",9603722638,'',"",true);
 
   constructor() { }
 
