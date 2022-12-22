@@ -1,0 +1,144 @@
+<!--  <div class="panel panel-primary" *ngFor="let employee of employees">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{employee.name}}</h3>
+  </div>
+  <div class="panel-body">
+
+    <div class="col-xs-10">
+
+      <div class="row vertical-align">
+
+        <div class="col-xs-4">
+
+          <img src="" alt="">
+        </div>
+
+        <div class="col-xs-8">
+
+          <div class="row">
+            <div class="col-xs-6">
+              Gender
+            </div>
+            <div class="col-xs-6">
+              : {{employee.gender}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Date of Birth
+            </div>
+            <div class="col-xs-6">
+              : {{employee.DOB | date}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Contact Preference
+            </div>
+            <div class="col-xs-6">
+              : {{employee.contactPreference}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Phone
+            </div>
+            <div class="col-xs-6">
+              : {{employee.phoneNumber}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Email
+            </div>
+            <div class="col-xs-6">
+              : {{employee.email}}
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Department
+            </div>
+            <div class="col-xs-6">
+              : {{employee.position}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Is Active
+            </div>
+            <div class="col-xs-6">
+               {{employee.isActive}}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  -->
+
+
+<!-- <div class="container"> -->
+<div class="card">
+    <div class="card-header">
+        {{Pagetitle}}
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">Filter By:</div>
+            <div class="col-md-4">
+                <!-- <input type="text" [(ngModel)]="listFilter" /> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"> Filter By:{{listFilter}} </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Filter By:</h4>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table" *ngIf="employees.length">
+                <thead class="heading">
+                    <tr>
+                        <th>
+                            <button class="btn btn-success" (click)="toggleImage()">
+                {{showImages? 'Hide':'Show'}} Image </button>
+                        </th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>PhoneNumber</th>
+                        <th>DOB</th>
+                        <th>Package</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of employees">
+
+                        <td>
+                            <img [src]="employee.imageUrl" alt="Path Not Found" class="pics" *ngIf="showImages">
+                        </td>
+                        <td>{{employee.name}} </td>
+                        <td>{{employee.gender}}</td>
+                        <td>{{employee.email}}</td>
+                        <td>{{employee.phoneNumber}}</td>
+                        <td>{{employee.DOB}}</td>
+                        <td>{{employee.package}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,7 @@ import { TodoComponent } from './todo/todo.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { ListEmployeeComponent } from './list-employee/list-employee.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'chandru',component:ChandruComponent},
   {path:'corporate',component:CorporateComponent},
   {path:'todo',component:TodoComponent},
-  {path:'Reactivecomponent',component:ReactiveformComponent},
+  {path:'Reactiveform',component:ReactiveformComponent},
+  {path:'listemployee',component:ListEmployeeComponent}
 
 ];
 
