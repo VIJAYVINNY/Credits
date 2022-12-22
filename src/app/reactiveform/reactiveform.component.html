@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
-    <form #userForm="ngForm">
-
+    <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate *ngIf="!submitted">
+        <!-- {{userForm.form.valid}} -->
         <div class="form-group">
             <label>Name:</label>
             <input type="text" name="userName" class="form-control" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched" [(ngModel)]="userModel.name">
@@ -45,32 +45,11 @@
         </div>
 
         <div class="form-check mb-3 ">
-            <input class="form-check-input " type="checkbox " name="subscribe " [(ngModel)]="userModel.subscribe ">
+            <input class="form-check-input" type="checkbox" name="subscribe" [(ngModel)]="userModel.subscribe">
             <label class="form-check-label " for="flexCheckDefault "> Proposal Offers:</label>
         </div>
         <button [disabled]="userForm.form.invalid||topicHasError" type="button" class="btn btn-primary ">SubmitForm</button>
 
-        <div ngModelGroup="address ">
-            <div class="form-group ">
-                <label>Street:</label>
-                <input type="text " class="form-control " name="street " ngModel>
-            </div><br>
-
-            <div class="form-group ">
-                <label>City:</label>
-                <input type="text " class="form-control " name="City " ngModel>
-            </div><br>
-
-            <div class="form-group ">
-                <label>State:</label>
-                <input type="text " class="form-control " name="phone " ngModel>
-            </div><br>
-
-            <div class="form-group ">
-                <label>Postal Code:</label>
-                <input type="tel " class="form-control " name="postalCode " ngModel>
-            </div><br>
-        </div>
         <hr />
     </form>
 </div>

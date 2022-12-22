@@ -12,6 +12,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AuthorizeComponent } from './authorize/authorize.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { MethodsComponent } from './methods/methods.component';
+import { AllserviceService } from 'src/services/allservice.service';
 
 
 
@@ -26,6 +28,8 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     PagenotfoundComponent,
     AuthorizeComponent,
     ReactiveformComponent,
+    MethodsComponent,
+
 
     ],
 

@@ -1,6 +1,4 @@
 export class User {
-telephone: any;
-
   constructor(
     public name:string,
     public email:string,

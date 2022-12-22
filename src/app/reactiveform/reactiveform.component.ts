@@ -1,31 +1,41 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
-
+import { EnrollmentService } from '../enrollment.service';
 
 @Component({
   selector: 'app-reactiveform',
   templateUrl: './reactiveform.component.html',
-  styleUrls: ['./reactiveform.component.scss']
+  styleUrls: ['./reactiveform.component.scss'],
 })
 export class ReactiveformComponent implements OnInit {
+  // subjects=['C#','ASP','JAVA','SQL','MongoDB','ASP.NET TUTORIALS','qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq',"sdfsdsdgdgggasdgdsgsgsdgsdgsdgsdgsdggasdgsdgtwetaeratqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqdhdfh"];
 
-  subjects=["C#","ASP","JAVA","SQL","MongoDB"];
+  subjects = ['C#', 'ASP', 'JAVA', 'SQL', 'MongoDB'];
 
-userModel=new User("","",9603722638,"","default",true);
+  userModel = new User('vijay', 'vijay111.gummadi@gmail.com', 9603722638, 'default', 'morning', true);
 
-  constructor() { }
+  constructor(private enrollmentService: EnrollmentService) {}
 
-topicHasError=true;
+  topicHasError = true;
+  submitted=false;
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  validateTopic(value: string) {
+    if (value === 'default') {
+      this.topicHasError = true;
+    } else {
+      this.topicHasError = false;
+    }
   }
 
-  validateTopic(value: string){
-    if(value==='default'){
-      this.topicHasError=true
-    }
-    else{
-      this.topicHasError=false
-    }
+  onSubmit() {
+
+
+this.submitted=true;
+    this.enrollmentService.enroll(this.userModel).subscribe(
+     (data) => console.log('Success!', data),
+     (error) => console.log('Error!', error)
+    );
   }
 }

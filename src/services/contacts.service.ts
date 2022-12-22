@@ -5,11 +5,8 @@ import{HttpClient,HttpHeaders,HttpParams} from '@angular/common/http';
   providedIn: 'root'
 })
 export class ContactsService {
+  constructor() { }
 
-  // 
-
-  constructor() { } 
-  
   getcontacts(){
 
   const contactList=[
@@ -22,9 +19,8 @@ export class ContactsService {
   return contactList;
   }
 
-
   callingFromTemplate(){
     console.log("Calling from template directly");
-    
+
   }
 }

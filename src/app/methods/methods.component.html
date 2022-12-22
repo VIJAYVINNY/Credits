@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form #userform="ngForm" (ngSubmit)="dataSubmit(userform.value)">
+                <fieldset>
+                    <div class="mb-3">
+                        <label for="u_name" class="form-label">Username</label>
+                        <input type="text" id="u_name" class="form-control" required ngModel>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="u_password" class="form-label">Password</label>
+                        <input type="text" id="u_password" class="form-control" ngModel required>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                              Indeterminate checkbox
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 normal">
+                        <label for="u_comments" class="form-label1">Comments in normal textbox:</label>
+                        <textarea id="u_comment" class="form-control" rows="5" value="type here"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="u_comments3" class="form-label2">Comments in medium textbox:</label>
+                        <textarea id="u_comment" class="form-control form-control-md" rows="5"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="u_comments1" class="form-label3">Comments in Large textbox:</label>
+                        <textarea id="u_comment" class="form-control form-control-lg" rows="5"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="u_comments2" class="form-label4">Comments in small textbox:</label>
+                        <textarea id="u_comment" class="form-control form-control-sm" rows="5"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Email" class="form-label5">Email:</label>
+                        <input type="email" id="email" class="form-control form-control-sm" placeholder="Enter your mail" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="file" class="form-label6">File:</label>
+                        <input type="file" id="file" class="form-control form-control-sm" type="file" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="color" class="form-label6">File:</label>
+                        <input type="color" id="file" class="form-control-sm form-control-color">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="color" class="form-label6">File:</label>
+                        <input type="color" id="file" class="form-control-sm form-control-color" disabled>
+                    </div>
+
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

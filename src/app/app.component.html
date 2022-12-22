@@ -11,13 +11,18 @@
 
 <!-- Calling all the components through the links  -->
 
-
+<p>routing normal way</p>
 <ul>
     <li><a href="authorize">Authorize</a></li>
     <li><a href="chandru">Chandru</a></li>
     <li><a href="corporate">Corporate</a></li>
     <li><a href="login">LogIn</a></li>
     <li><a href="contacts">Contacts</a></li>
+
+</ul>
+<p>Routing in Angular way</p>
+<ul>
+    <li><a [routerLink]="['login']">login</a> </li>
     <li><a [routerLink]="['pagenotfound']">PageNotFound</a></li>
     <li> <a [routerLink]="['Reactivecomponent']">Reactiveform</a></li>
 </ul>
