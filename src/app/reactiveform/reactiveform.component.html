@@ -24,22 +24,22 @@
         </div><br>
 
         <div class=" form-group ">
-            <select (blur)="validateTopic(topic.value)" (change)="validateTopic(topic.value)" class=" custom-select " name="topic " #topic="ngModel" [class.is-invalid]="topic.invalid&&topic.touched " [(ngModel)]="userModel.topic ">
+            <select (blur)="validateTopic(topic.value)" (change)="validateTopic(topic.value)" class=" custom-select" name="topic" #topic="ngModel" [class.is-invalid]="topic.invalid&&topic.touched" [(ngModel)]="userModel.topic ">
                 <option value="default ">I'm Interested in</option>
-                <option *ngFor="let sub of subjects ">{{sub}}</option>
+                <option *ngFor="let sub of subjects">{{sub}}</option>
                 </select>
-            <small class="text-danger " [class.d-none]="!topicHasError||topic.untouched ">Please choose one topic</small>
+            <small class="text-danger" [class.d-none]="!topicHasError||topic.untouched">Please choose one topic</small>
         </div><br>
 
-        <div class="mb-3 ">
+        <div class="mb-3">
             <label>Time Preference</label>
-            <div class="form-check ">
-                <input type="radio " class="form-check-input " name="timePreference " value="morning " [(ngModel)]="userModel.timepreference ">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="timePreference" value="morning" [(ngModel)]="userModel.timepreference">
                 <label class="form-check-label ">Morning(9AM-12PM)</label>
             </div>
 
-            <div class="form-check ">
-                <input type="radio " class="form-check-input " name="timePreference " value="evening " [(ngModel)]="userModel.timepreference ">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="timePreference" value="evening" [(ngModel)]="userModel.timepreference">
                 <label class="form-check-label ">Evening(4PM-8PM)</label>
             </div>
         </div>
