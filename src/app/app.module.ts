@@ -13,6 +13,7 @@ import { AuthorizeComponent } from './authorize/authorize.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { MethodsComponent } from './methods/methods.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AllserviceService } from 'src/services/allservice.service';
 
 
@@ -39,6 +40,7 @@ import { AllserviceService } from 'src/services/allservice.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [
 
