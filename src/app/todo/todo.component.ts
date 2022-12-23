@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ContactsService } from 'src/services/contacts.service';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-todo',
@@ -8,18 +10,19 @@ import { ContactsService } from 'src/services/contacts.service';
   styleUrls: ['./todo.component.scss']
 })
 export class TodoComponent implements OnInit {
-RegistrationForm=new FormGroup({
-  UserName:new FormControl('Sanjay'),
-  Password:new FormControl(''),
-  Confirmpassword:new FormControl('')
-});
-  // constructor(private ContactsService:ContactsService) { }
+
+
+  registrationForm=new FormGroup({
+    userName:new FormControl('Sanjay'),
+    password:new FormControl(''),
+    confirmPassword:new FormControl('')
+  });
+
+
   constructor(){}
 
   contactList:any;
 
-  ngOnInit(): void {
-    // this.contactList=this.ContactsService.getcontacts();
-  }
+  ngOnInit(): void { }
 
 }

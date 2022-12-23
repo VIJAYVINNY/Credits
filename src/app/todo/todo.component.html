@@ -6,19 +6,20 @@
 <div class="container">
     <div class="container-fluid">
         <h2>Registration-Form</h2>
-        <form>
-            <div class="form-froup">
+        <form [formGroup]="registrationForm">
+
+            <div class="form-group">
                 <label for="">UserName</label>
-                <input type="text" class="form-control">
+                <input formControlName="userName" type="text" class="form-control">
             </div>
 
-            <div class="form-froup">
+            <div class="form-group">
                 <label for="">Password</label>
-                <input type="password" class="form-control">
+                <input formControlName="password" type="password" class="form-control">
 
-                <div class="form-froup">
+                <div class="form-group">
                     <label for="">Confirmpassword</label>
-                    <input type="password" class="form-control">
+                    <input type="password" formControlName="confirmPassword" class="form-control">
 
                     <button type="button" class="btn btn-primary">Register</button>
                 </div>

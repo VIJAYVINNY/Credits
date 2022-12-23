@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 })
 export class MethodsService {
 
-  constructor(private http: HttpClient) { }
+  constructor(protected http: HttpClient) { }
 
   url = "http://localhost:3000/details";
 
