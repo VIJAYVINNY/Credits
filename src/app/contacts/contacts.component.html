@@ -1,15 +1,18 @@
 <!-- <p >contacts works!</p> -->
 
-<!-- <h2>Contact Lists</h2>
-<h3>Calling values through services and declared varibles in the component</h3> -->
+<h2>Contact Lists</h2>
+<h3>Calling values through services and declared varibles in the component</h3>
 
 <!-- <ul>
     <li class="gen" *ngFor="let contact of contactList">
         {{contact.contactMail}}
     </li>
 </ul> -->
+<!-- <div *ngFor=" let contact of contactList ">
+    {{contact.contactName}}
+</div> -->
 
-<table class="table table-dark">
+<table class="table table-light">
     <thead>
         <tr>
             <th scope="col">contactId</th>
@@ -19,15 +22,13 @@
     </thead>
     <tbody>
         <tr scope="row" *ngFor="let contact of contactList">
-            <td>{{contact.contactId}}</td>
-            <td>{{contact.contactName}}</td>
-            <td>{{contact.contactMail}}</td>
+            <td scope="row">{{contact.contactId}}</td>
+            <td scope="row">{{contact.contactName}}</td>
+            <td scope="row">{{contact.contactMail}}</td>
         </tr>
     </tbody>
 </table>
 
-<!-- <div *ngFor=" let contact of contactList ">
-    {{contact.contactName}}
-</div> -->
+
 
 <!-- <button (click)= "callingFromTemplate() ">Calling from Template Directly</button> -->

@@ -15,8 +15,15 @@ export class TodoComponent implements OnInit {
   registrationForm=new FormGroup({
     userName:new FormControl('Sanjay'),
     password:new FormControl(''),
-    confirmPassword:new FormControl('')
+    confirmPassword:new FormControl(''),
+    
+    address:new FormGroup({
+      city:new FormControl(''),
+      state:new FormControl(''),
+      postalNo:new FormControl(''),
+    })
   });
+address: any;
 
 
   constructor(){}
