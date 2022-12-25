@@ -11,6 +11,7 @@ export class AuthorizeComponent implements OnInit {
 
   contactList: any
 
+
   constructor(private methodService: MethodsService) {
 
     this.methodService.getContacts().subscribe((data: any) => {
