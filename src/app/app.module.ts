@@ -16,6 +16,7 @@ import { MethodsComponent } from './methods/methods.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
+import { TemplateComponent } from './template/template.component';
 
 
 
@@ -34,6 +35,7 @@ import { ImplementingComponent } from './implementing/implementing.component';
     MethodsComponent,
     ListEmployeeComponent,
     ImplementingComponent,
+    TemplateComponent,
     ],
 
 

@@ -1,0 +1,10 @@
+<form #dataForm="ngForm" (submit)="addDetails(dataForm)">
+    <input type="text" name="firstname" [(ngModel)]="firstname"><br/>
+    <input type="checkbox" name="terms" [(ngModel)]="terms">Accept Terms&conditions
+    <button type="submit" class="btn btn-primary mt-2">Submit</button><br/>
+    <select typ="list" [(ngModel)]="list" name="type">
+      <option value="1">FrontEnd</option>
+      <option value="2">BackEnd</option>
+      <option value="3">FullStack</option>
+    </select>
+</form>

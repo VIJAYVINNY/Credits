@@ -10,6 +10,7 @@
 <p>{{username}}</p><hr> -->
 
 <!-- Calling all the components through the links  -->
+<!--
 <div class="container">
     <p>routing normal way</p>
     <ul>
@@ -20,15 +21,20 @@
         <li><a href="contacts">Contacts</a></li>
 
     </ul>
+ -->
 
-    <p>Routing in Angular way</p>
-    <ul>
-        <li><a [routerLink]="['/login']">login</a> </li>
-        <li><a [routerLink]="['/pagenotfound']">PageNotFound</a></li>
-        <li><a [routerLink]="['/Reactiveform']">Reactiveform</a></li>
-        <li><a [routerLink]="['/todo']">todo</a> </li>
-        <li><a [routerLink]="['/listemployee']">employeelist</a></li>
-    </ul>
+<!--
+<p>Routing in Angular way</p>
+<ul>
+    <li><a [routerLink]="['/login']">login</a> </li>
+    <li><a [routerLink]="['/pagenotfound']">PageNotFound</a></li>
+    <li><a [routerLink]="['/Reactiveform']">Reactiveform</a></li>
+    <li><a [routerLink]="['/todo']">todo</a> </li>
+    <li><a [routerLink]="['/listemployee']">employeelist</a></li>
+</ul>
+</div> -->
+<div>
+    <li><a [routerLink]="['/template']">template</a> </li>
+
 </div>
-
 <router-outlet></router-outlet>

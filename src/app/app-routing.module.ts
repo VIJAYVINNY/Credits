@@ -11,6 +11,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
+import { TemplateComponent } from './template/template.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path:'todo',component:TodoComponent},
   {path:'Reactiveform',component:ReactiveformComponent},
   {path:'listemployee',component:ListEmployeeComponent},
-  {path:'implements',component:ImplementingComponent}
+  {path:'implements',component:ImplementingComponent},
+  {path:'template',component:TemplateComponent},
 
 ];
 
