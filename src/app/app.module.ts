@@ -14,8 +14,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { MethodsComponent } from './methods/methods.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AllserviceService } from 'src/services/allservice.service';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
+import { ImplementingComponent } from './implementing/implementing.component';
+import { TemplateComponent } from './template/template.component';
+
 
 
 
@@ -32,8 +34,8 @@ import { ListEmployeeComponent } from './list-employee/list-employee.component';
     ReactiveformComponent,
     MethodsComponent,
     ListEmployeeComponent,
-
-
+    ImplementingComponent,
+    TemplateComponent,
     ],
 
 
