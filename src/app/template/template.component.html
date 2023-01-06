@@ -1,10 +1,14 @@
 <form #dataForm="ngForm" (submit)="addDetails(dataForm)">
-    <input type="text" name="firstname" [(ngModel)]="firstname"><br/>
-    <input type="checkbox" name="terms" [(ngModel)]="terms">Accept Terms&conditions
-    <button type="submit" class="btn btn-primary mt-2">Submit</button><br/>
-    <select typ="list" [(ngModel)]="list" name="type">
-      <option value="1">FrontEnd</option>
+    <input type="text" name="firstname" [(ngModel)]="firstname" required>
+    <br/>
+
+    <select typ="list" [(ngModel)]="list" name="type" required>
+      <option value=" 1">FrontEnd</option>
       <option value="2">BackEnd</option>
       <option value="3">FullStack</option>
-    </select>
+    </select><br/>
+
+    <textarea name="adderess" [(ngModel)]="address" required></textarea><br/>
+    <input type="checkbox " name="terms " [(ngModel)]="terms" required>Accept Terms&conditions<br/>
+    <button type="submit" class="btn btn-primary mt-2" [disabled]="!dataForm.valid">Submit</button><br/>
 </form>
