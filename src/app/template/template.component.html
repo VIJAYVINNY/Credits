@@ -9,6 +9,7 @@
     </select><br/>
 
     <textarea name="adderess" [(ngModel)]="address" required></textarea><br/>
-    <input type="checkbox " name="terms " [(ngModel)]="terms" required>Accept Terms&conditions<br/>
-    <button type="submit" class="btn btn-primary mt-2" [disabled]="!dataForm.valid">Submit</button><br/>
+    <input type="checkbox" name="terms" [(ngModel)]="terms" required>Accept Terms&conditions<br/>
+    <button type="submit" class="btn btn-primary mt-2" [disabled]="!dataForm.valid">Submit</button>
+    <button type="reset" class="btn btn-link mt-2" (click)="resetData(dataForm)"> Reset</button>
 </form>

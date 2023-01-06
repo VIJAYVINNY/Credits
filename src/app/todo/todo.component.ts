@@ -10,7 +10,10 @@ import { ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./todo.component.scss']
 })
 export class TodoComponent implements OnInit {
+  // registrationForm:FormGroup;
   constructor(){}
+
+
 
   registrationForm=new FormGroup({
     userName:new FormControl(''),
@@ -27,7 +30,9 @@ export class TodoComponent implements OnInit {
 address: any;
 contactList:any;
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+
+   }
 // //With help of patchvalue we will get required data(Optional)
   // loadApiData(){
   //   this.registrationForm.patchValue({
@@ -42,7 +47,7 @@ contactList:any;
   //   })
   //     }
 
-  //// 
+
       loadApiData(){
         this.registrationForm.setValue({
           userName:"vijay",
