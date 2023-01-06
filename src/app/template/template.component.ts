@@ -9,17 +9,21 @@ import { types } from './template';
 })
 export class TemplateComponent implements OnInit {
 
-firstname: any;
-terms:boolean=false;
-list:string='';
-address:string='';
+  firstname: any;
+  terms: boolean = false;
+  list: string = '';
+  address: string = '';
 
-// datatypes:types=new this.datatypes();
-  constructor(private formBuilder:FormBuilder) { }
+  // datatypes:types=new this.datatypes();
+  constructor(private formBuilder: FormBuilder) { }
 
-  addDetails(formValue:NgForm){
-console.log(formValue.value);
+  addDetails(formValue: NgForm) {
+    console.log(formValue.value);
+  }
 
+  resetData(formValue: NgForm) {
+    // formValue.reset();
+    formValue.resetForm();
   }
 
   ngOnInit(): void {
