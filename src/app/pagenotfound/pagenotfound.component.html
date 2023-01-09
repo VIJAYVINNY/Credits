@@ -1,1 +1,327 @@
-<p>pagenotfound works!</p>
+<!-- <div class="w-full h-full bg-pattern" fxLayout="column" fxLayoutAlign="center center">
+  <div @fadeInUp class="card overflow-auto w-full max-w-2xl">
+      <div class="p-6 pb-0" fxLayout="column" fxLayoutAlign="center center">
+          <div class="fill-current text-center">
+              <img class="w-32" src="assets/media/logos/Optevus_Blue_Logo.jpg">
+          </div>
+      </div>
+
+      <div class="text-center mt-4">
+          <h2 class="title m-0">Register for an account</h2>
+          <h4 class="body-2 text-secondary m-0">Simply fill out the form below</h4>
+          <div fxLayout="row" class="text-center mt-3" fxLayoutAlign="center center">
+              <div class="radio">
+                  <input type="radio" color="primary" id="inlineRadio1" value="Client" [checked]="'Client' == registrationForm.value.userType" (click)="onSelectRadioType('Client')" class="cursor-pointer">
+                  <span (click)="onSelectRadioType('Client')"></span>
+                  <mat-label class="form-check-label m-3 cursor-pointer" for="inlineRadio1" (click)="onSelectRadioType('Client')">Client</mat-label>
+              </div>
+              <div class="radio">
+                  <input type="radio" color="primary" id="inlineRadio2" value="Applicant" [checked]="'Applicant' == registrationForm.value.userType" (click)="onSelectRadioType('Applicant')" class="cursor-pointer">
+                  <span (click)="onSelectRadioType('Applicant')"></span>
+                  <mat-label class="form-check-label m-3 cursor-pointer" for="inlineRadio2" (click)="onSelectRadioType('Applicant')">Applicant</mat-label>
+              </div>
+              <div style="font-weight: bolder;color: #5b5bf5;">
+                  <span *ngIf="'Applicant' == registrationForm.value.userType && !enableStep2">Step 1 of 2</span>
+                  <span *ngIf="'Applicant' == registrationForm.value.userType && enableStep2">Step 2 of 2</span>
+              </div>
+          </div>
+           <div style="font-weight: bolder;color: #5b5bf5;" *ngIf="'Applicant' == registrationForm.value.userType">
+      <span *ngIf="'Applicant' == registrationForm.value.userType && !enableStep2">Step 1 of 2</span>
+      <span *ngIf="'Applicant' == registrationForm.value.userType && enableStep2">Step 2 of 2</span>
+    </div> -->
+<!--     
+      </div>
+      <form [formGroup]="registrationForm" fxLayout="column">
+
+          <div class="px-gutter py-4" gdColumns="1fr 1fr" gdColumns.sm="1fr" gdColumns.xs="1fr" gdGap="16px"> 
+          <div class="px-gutter py-4" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="space-between start" fxLayoutAlign.sm="start start" fxLayoutAlign.xs="start start" fxLayoutGap="16px" *ngIf="!enableStep2">
+              <div fxFlex="50" fxFlex.sm="100" fxFlex.xs="100" fxLayout="column" fxLayoutAlign="start start" class="w-full">
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center" style="margin-bottom: 16px;">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>First name </mat-label>
+                          <input formControlName="firstName" matInput required maxlength="75">
+                          <mat-error *ngIf="registrationForm.get('firstName').hasError('required')">Firstname is required
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('firstName').hasError('minlength')">Firstname should have at least 1 symbols
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('firstName').hasError('maxLength')">Firstname should have maximum 75 symbols
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('firstName').hasError('pattern')">First name should have only alphabets
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Preferred timezone</mat-label>
+                          <input formControlName="userTimezoneValue" matInput [matAutocomplete]="auto1" required (keyup)="timezoneFilter($event)">
+                          <mat-autocomplete (optionSelected)="timezoneSelected($event)" #auto1="matAutocomplete">
+                              <mat-option *ngFor="let timeZoneObj of filteredTimezone" [value]="timeZoneObj.id" matTooltip="{{timeZoneObj.timeZoneName }} ({{timeZoneObj.timeZone}})" [ngStyle]="{'background-color':timeZoneObj.islinked ? 'rgb(200 246 200)' : '' }">
+                                  {{timeZoneObj.timeZoneName }} ({{timeZoneObj.timeZone}})
+                              </mat-option>
+                          </mat-autocomplete>
+                          <mat-error *ngIf="registrationForm.get('userTimezoneValue').hasError('required')">Preferred timezone is required
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+
+
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center" style="margin-bottom: 16px;">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>E-Mail</mat-label>
+                          <input formControlName="email" matInput required autocomplete="off" maxlength="255">
+                          <mat-error *ngIf="registrationForm.get('email').hasError('required')">Email is required</mat-error>
+                          <mat-error *ngIf="registrationForm.get('email').hasError('minlength')">Email should have at least 3 symbols
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('email').hasError('maxLength')">Email should have maximum 255 symbols
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('email').hasError('email')">Email is invalid
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('email').hasError('pattern')">Email should have only letters (a-z), numbers (0-9), and periods (.) are allowed.</mat-error>
+                      </mat-form-field>
+                  </div>
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center" style="margin-bottom: 16px;">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Recovery E-Mail</mat-label>
+                          <input formControlName="recoveryEmail" (keyup)="recoveryEmailChange($event)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxlength="255" matInput autocomplete="off">
+                          <mat-error *ngIf="registrationForm.get('recoveryEmail').hasError('pattern')">Email is invalid
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('recoveryEmail').hasError('required')">Email is required
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+                  <mat-error *ngIf="registrationForm.value.email != '' && registrationForm.value.email != null && registrationForm.value.email != undefined && 
+              registrationForm.value.recoveryEmail == registrationForm.value.email">Email and Recovery Email cannot be same
+                  </mat-error>
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center" *ngIf="isRecoveryEmail" style="margin-bottom: 16px;">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Recovery Question</mat-label>
+                          <mat-select formControlName="recoveryQuestionId" [required]="isRecoveryEmail">
+                              <mat-option *ngFor="let question of recoveryQuestions" [value]="question.key">
+                                  {{question.value}}
+                              </mat-option>
+                          </mat-select>
+                          <mat-error *ngIf="registrationForm.get('recoveryQuestionId').hasError('required')">Recovery Question is required
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center" *ngIf="isRecoveryEmail" style="margin-bottom: 16px;">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Recovery Answer</mat-label>
+                          <input formControlName="recoveryAnswer" matInput [required]="isRecoveryEmail" autocomplete="off">
+                          <mat-error *ngIf="registrationForm.get('recoveryAnswer').hasError('required')">Recovery Answer is required
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center" [ngClass]="{ 'mb-custom2' : (passwordContainsError() == true && passwordOnlyRequired() == false), 
+          'mb-custom1' : ((passwordContainsError() == false && passwordOnlyRequired() == true) || (passwordContainsError() == false && passwordOnlyRequired() == false))}">
+                      style="margin-bottom: 16px;"> 
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Password</mat-label>
+                          <input [type]="inputType" formControlName="password" matInput required autocomplete="new-password">
+                          <button (click)="toggleVisibility()" mat-icon-button matSuffix matTooltip="Toggle Visibility" type="button">
+              <mat-icon *ngIf="visible" [icIcon]="icVisibility"></mat-icon>
+              <mat-icon *ngIf="!visible" [icIcon]="icVisibilityOff"></mat-icon>
+            </button>
+                          <mat-hint>Click the eye to toggle visibility</mat-hint>
+                          <mat-error *ngIf="registrationForm.get('password').hasError('required') || registrationForm.get('password').hasError('minlength') ||
+              registrationForm.get('password').hasError('maxLength') || registrationForm.get('password').hasError('pattern')">
+                              <span *ngIf="registrationForm.get('password').hasError('required')">Password is required</span>
+                              <span *ngIf="registrationForm.get('password').hasError('minlength')">Password should have at least 8
+                symbols
+              </span>
+                              <span *ngIf="registrationForm.get('password').hasError('maxLength')">Password should have maximum 100
+                symbols
+              </span>
+                              <span *ngIf="registrationForm.get('password').hasError('pattern')">Password should contain at least one
+                digit, at
+                least one upper case alphabet, at least one lower case alphabet, at least one special character,
+                doesn’t
+                contain any
+                white space
+              </span>
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+
+              </div>
+              <div fxFlex="50" fxFlex.sm="100" fxFlex.xs="100" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="16px" class="w-full" *ngIf="!enableStep2">
+
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center" style="margin-bottom: 16px;">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Last name</mat-label>
+                          <input formControlName="lastName" matInput required maxlength="75">
+                          <mat-error *ngIf="registrationForm.get('lastName').hasError('required')">Lastname is required</mat-error>
+                          <mat-error *ngIf="registrationForm.get('lastName').hasError('minlength')">Lastname should have at least 1 symbols
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('lastName').hasError('maxLength')">LastName should have maximum 75 symbols
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('lastName').hasError('pattern')">Last name should have only alphabets
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+
+
+
+
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Dialing code</mat-label>
+                          <input type="text" placeholder="Country" aria-label="Number" matInput (keyup)="countryFilter($event)" formControlName="dialingCodeValue" [matAutocomplete]="auto" required>
+                          <mat-autocomplete (optionSelected)="countrySelected($event)" #auto="matAutocomplete">
+                              <mat-option *ngFor="let country of filteredCountry" [value]="country.id" [ngStyle]="{'background-color':country.islinked ? 'rgb(200 246 200)' : '' }">
+                                  {{country.name}} (+{{country.phonecode}})
+                              </mat-option>
+                          </mat-autocomplete>
+                          <mat-error *ngIf="registrationForm.get('dialingCodeValue').hasError('required')">Dialing code is required
+                          </mat-error>
+                      </mat-form-field>
+                  </div>
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Mobile number</mat-label>
+                          <input formControlName="phoneNumber" matInput required (keypress)="numberOnly($event)">
+                          <mat-error *ngIf="registrationForm.get('phoneNumber').hasError('required')">Mobile number is required
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('phoneNumber').hasError('minlength')">Mobile number should have at least 10 digits</mat-error>
+                          <mat-error *ngIf="registrationForm.get('phoneNumber').hasError('maxlength')">Mobile number should not be more than 15 digits</mat-error>
+                      </mat-form-field>
+                  </div>
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center">
+                      <mat-checkbox color="primary" formControlName="sendMobileNotification" style="margin-top:15px">
+                          <span class="role-feature-name">Allow sending SMS alerts and notifications</span>
+                      </mat-checkbox>
+                  </div>
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center" *ngIf="isRecoveryEmail">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Password (Confirm)</mat-label>
+                          <input [type]="inputType" formControlName="cPassword" matInput required>
+                          <button (click)="toggleVisibility()" mat-icon-button matSuffix matTooltip="Toggle Visibility" type="button">
+              <mat-icon *ngIf="visible" [icIcon]="icVisibility"></mat-icon>
+              <mat-icon *ngIf="!visible" [icIcon]="icVisibilityOff"></mat-icon>
+            </button>
+                          <mat-hint>Please repeat your password from above</mat-hint>
+                          <mat-error *ngIf="registrationForm.get('cPassword').hasError('required')">Confirm password is required
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('cPassword').hasError('minlength')">Confirm password should have at least 8 symbols
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('cPassword').hasError('maxLength')">Confirm password should have maximum 100 symbols
+                          </mat-error>
+                          <mat-error class="mt-3" *ngIf="registrationForm.get('cPassword').errors &&registrationForm.get('cPassword').errors.ConfirmPassword">
+                              'Password' and 'Confirm password' didn't match.</mat-error>
+                      </mat-form-field>
+                  </div>
+                  <div class="py-3 w-full" fxLayout="row" fxLayoutAlign="start center" *ngIf="!isRecoveryEmail" style="margin-bottom: 16px;">
+                      <mat-form-field fxFlex="grow">
+                          <mat-label>Password (Confirm)</mat-label>
+                          <input [type]="confirmPasswordInputType" formControlName="cPassword" matInput required>
+                          <button (click)="confirmPasswordToggleVisibility()" mat-icon-button matSuffix matTooltip="Toggle Visibility" type="button">
+              <mat-icon *ngIf="confirmPasswordVisible" [icIcon]="icVisibility"></mat-icon>
+              <mat-icon *ngIf="!confirmPasswordVisible" [icIcon]="icVisibilityOff"></mat-icon>
+            </button>
+                          <mat-hint>Please repeat your password from above</mat-hint>
+                          <mat-error *ngIf="registrationForm.get('cPassword').hasError('required')">Confirm password is required
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('cPassword').hasError('minlength')">Confirm password should have at least 8 symbols
+                          </mat-error>
+                          <mat-error *ngIf="registrationForm.get('cPassword').hasError('maxLength')">Confirm password should have maximum 100 symbols
+                          </mat-error>
+                          <mat-error class="mt-3" *ngIf="registrationForm.get('cPassword').errors &&registrationForm.get('cPassword').errors.ConfirmPassword">
+                              'Password' and 'Confirm password' didn't match.</mat-error>
+                      </mat-form-field>
+                  </div>
+              </div>
+          </div>
+
+          <div class="px-gutter pb-4" gdColumns="1fr 1fr" gdColumns.xs="1fr" gdGap="16px">
+              <div class="py-3" fxLayout="row" fxLayoutAlign="start center" *ngIf="registrationForm.controls['userType'].value == 'Client'">
+                  <mat-form-field fxFlex="grow">
+                      <mat-label>Organization name</mat-label>
+                      <input formControlName="organisationName" matInput required pattern="^[a-zA-Z0-9\s]{0,100}$" maxlength="100">
+                      <mat-error *ngIf="registrationForm.get('organisationName').hasError('required')">Organization name is required
+                      </mat-error>
+                      <mat-error *ngIf="registrationForm.get('organisationName').hasError('minlength')">Organization name should have at least 3 symbols</mat-error>
+                      <mat-error *ngIf="registrationForm.get('organisationName').hasError('pattern')">Organization name is invalid</mat-error>
+                      <mat-error *ngIf="registrationForm.get('organisationName').hasError('maxLength')">Organization name should have maximum 100 symbols</mat-error>
+                  </mat-form-field>
+              </div>
+              <div class="py-3" fxLayout="row" fxLayoutAlign="start center" *ngIf="'Client' == registrationForm.value.userType">
+                  <mat-form-field fxFlex="grow">
+                      <mat-label>Registration Key</mat-label>
+                      <input formControlName="adminCode" matInput required (keypress)="notSpace($event)" maxlength="15">
+                      <mat-error *ngIf="registrationForm.get('adminCode').hasError('required')">Registration Key is required
+                      </mat-error>
+                      <mat-error *ngIf="registrationForm.get('adminCode').hasError('minlength')">Registration Key should have at least 5 symbols
+                      </mat-error>
+                      <mat-error *ngIf="registrationForm.get('adminCode').hasError('maxLength')">Registration Key should have maximum 15 symbols
+                      </mat-error>
+                  </mat-form-field>
+              </div>
+              <div class="py-3" fxLayout="row" fxLayoutAlign="start center" *ngIf="enableStep2 && 'Applicant' == registrationForm.value.userType">
+                  <mat-form-field fxFlex="grow">
+                      <mat-label>Registration Key</mat-label>
+                      <input formControlName="applicantCode" matInput required (keypress)="notSpace($event)" maxlength="15">
+                      <mat-error *ngIf="registrationForm.get('applicantCode').hasError('required')">Registration Key is required
+                      </mat-error>
+                      <mat-error *ngIf="registrationForm.get('applicantCode').hasError('minlength')">Registration Key should have at least 5 symbols
+                      </mat-error>
+                      <mat-error *ngIf="registrationForm.get('applicantCode').hasError('maxLength')">Registration Key should have maximum 15 symbols
+                      </mat-error>
+                  </mat-form-field>
+              </div>
+          </div>
+          <div class="px-gutter" gdColumns="1fr 1fr" gdColumns.xs="1fr" gdGap="16px">
+              <div class="py-3" fxLayout="row" fxLayoutAlign="start center" *ngIf="!enableStep2 && 'Client' == registrationForm.value.userType">
+                  <mat-checkbox color="primary" formControlName="agree" class="caption">I agree to the</mat-checkbox>
+                  <a (click)="goToTerms()" class="ml-1 cursor-pointer" style="color: #5c77ff;font-weight: 800;"><b>
+            terms and conditions</b>.</a>
+              </div>
+
+              <div class="py-3" fxLayout="row" fxLayoutAlign="start center" *ngIf="enableStep2 && 'Applicant' == registrationForm.value.userType">
+                  <mat-checkbox color="primary" formControlName="agree" class="caption">I agree to the</mat-checkbox>
+                  <a (click)="goToTerms()" class="ml-1 cursor-pointer" style="color: #5c77ff;font-weight: 800;"><b>
+            terms and conditions</b>.</a>
+              </div>
+
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="center center" class="mb-5" *ngIf="'Client' == registrationForm.value.userType">
+
+              <button type="submit" class="mt-3 mb-5" color="primary" mat-raised-button type="button" id="kt_login_signup_submit" (click)="submit()" [disabled]="(registrationForm.invalid || registrationForm.value.recoveryEmail == registrationForm.value.email 
+      || !registrationForm.controls['agree'].value || isAnyoperationsInprogress) || enableSubmitButton">
+        SIGN UP
+      </button>
+
+              <p class="text-secondary text-center">
+                  Already have an account?<br />
+                  <a style="color: #5c77ff;font-weight: 800;cursor: pointer;" (click)="goToLoginScreen()">Sign in here</a>
+              </p>
+
+          </div>
+          <div fxLayout="row" fxLayoutAlign="space-between center" class="mb-5 pr-5" *ngIf="'Applicant' == registrationForm.value.userType">
+              <div class="row" fxLayout="row" fxLayoutAlign="space-between center;" class="mb-5 pr-5 ml-5" *ngIf="enableStep2" style="width: 100%;">
+                  <a style="color: #5c77ff;font-weight: 800;cursor: pointer;margin-top: 20px !important;
+      margin-left: 5px !important;" (click)="backToStep1()" fxLayoutAlign="center start">Back</a>
+                  <button type="submit" class="mt-3 mb-5" color="primary" mat-raised-button type="button" *ngIf="enableStep2" id="kt_login_signup_submit" (click)="submit()" [disabled]="(registrationForm.invalid || registrationForm.value.recoveryEmail == registrationForm.value.email 
+        || !registrationForm.controls['agree'].value || isAnyoperationsInprogress) || enableSubmitButton" fxLayoutAlign="center end">
+        SIGN UP
+      </button>
+              </div>
+              <div *ngIf="!enableStep2 && 'Applicant' == registrationForm.value.userType" class="ml-8">
+                  <i class="fa fa-info-circle"></i>
+                  <span style="font-size: 12px;margin-left: 8px !important;"> Once you click on next then you will receive registration key to the mentioned email </span>
+              </div>
+              <button type="submit" class="mt-3 mb-5" color="primary" mat-raised-button type="button" *ngIf="!enableStep2 && 'Applicant' == registrationForm.value.userType" id="kt_login_signup_submit" (click)="sendApplicantRegistrationKey()" [disabled]="(registrationForm.invalid || registrationForm.value.recoveryEmail == registrationForm.value.email)">
+        Next
+      </button>
+
+          </div>
+          <div fxLayout="row" class="mb-5 pr-5" fxLayoutAlign="center center" *ngIf="'Applicant' == registrationForm.value.userType">
+              <p class="text-secondary text-center">
+                  Already have an account?<br />
+                  <a style="color: #5c77ff;font-weight: 800;cursor: pointer;" (click)="goToLoginScreen()">Sign in here</a>
+              </p>
+          </div>
+      </form>
+  </div>
+</div>  -->

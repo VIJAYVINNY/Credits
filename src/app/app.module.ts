@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
+import { ArcreactComponent } from './arcreact/arcreact.component';
 
 
 
@@ -36,6 +37,7 @@ import { TemplateComponent } from './template/template.component';
     ListEmployeeComponent,
     ImplementingComponent,
     TemplateComponent,
+    ArcreactComponent,
     ],
 
 

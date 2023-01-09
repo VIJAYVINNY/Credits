@@ -12,6 +12,7 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
+import { ArcreactComponent } from './arcreact/arcreact.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path:'listemployee',component:ListEmployeeComponent},
   {path:'implements',component:ImplementingComponent},
   {path:'template',component:TemplateComponent},
+  {path:'arcreact',component:ArcreactComponent}
 
 ];
 

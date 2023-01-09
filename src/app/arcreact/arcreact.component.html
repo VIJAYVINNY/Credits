@@ -1,0 +1,21 @@
+<form [formGroup]="loanInfoForm">
+
+    <div class="form-group">
+        <label> LoanName: </label>
+        <input type="text" formControlName="loanName">
+    </div><br />
+
+    <div class="form-group">
+        <label> Loan Type: </label>
+        <input type="text" formControlName="loanType">
+    </div><br />
+
+    <div class="form-group">
+        <label>Description:</label>
+        <textarea formControlName="description"></textarea>
+    </div><br />
+
+    <div class="form-group">
+        <button (click)="submitData()" [disabled]="!loanInfoForm.valid">Submit</button>
+    </div>
+</form>
