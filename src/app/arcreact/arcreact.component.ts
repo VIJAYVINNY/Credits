@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-arcreact',
@@ -9,7 +9,7 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 export class ArcreactComponent implements OnInit {
 
   loanInfoForm!: FormGroup;
-  constructor(public fb: FormBuilder) { }
+  constructor(public fb: FormBuilder ) { }
 
   ngOnInit(): void {
     // this.loanInfoForm=new FormGroup({
@@ -19,7 +19,11 @@ export class ArcreactComponent implements OnInit {
     // })
 
     this.loanInfoForm = this.fb.group({
-      'loanName': new FormControl(),
+      'loanName': new FormControl('',Validators.compose([
+        Validators.required,
+        Validators.minLength(7),
+      Validators.maxLength(15)
+    ])),
       'loanType': new FormControl(),
       'description': new FormControl()
     })
@@ -41,10 +45,11 @@ export class ArcreactComponent implements OnInit {
     // }
 
     // this.loanInfoForm.patchValue(addingValues);  ////  With Patchvalues setting the values are optional
-    this.loanInfoForm.valueChanges.subscribe(data=>{
-      console.log(data);
 
-    })
+
+    // this.loanInfoForm.valueChanges.subscribe(data=>{
+    //   console.log(data);
+    // })
   }
 
 
