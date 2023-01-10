@@ -8,8 +8,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import {PortalModule} from '@angular/cdk/portal';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
-
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatTableModule} from '@angular/material/table';
+import {MatTreeModule} from '@angular/material/tree';
 
 @NgModule({
   declarations: [MaterialComponent],
@@ -26,7 +28,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatCardModule,
     MatTabsModule,
     PortalModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTooltipModule,
+    MatStepperModule,
+    MatTableModule,
+    MatTreeModule
+    
+
   
   ]
 })
