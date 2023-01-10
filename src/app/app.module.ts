@@ -18,7 +18,8 @@ import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
 import { ArcreactComponent } from './arcreact/arcreact.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 
 
@@ -47,6 +48,10 @@ import { ArcreactComponent } from './arcreact/arcreact.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+
+
   ],
   providers: [
 
