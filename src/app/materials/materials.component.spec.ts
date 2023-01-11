@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MaterialComponent } from './material.component';
+import { MaterialsComponent } from './materials.component';
 
-describe('MaterialComponent', () => {
-  let component: MaterialComponent;
-  let fixture: ComponentFixture<MaterialComponent>;
+describe('MaterialsComponent', () => {
+  let component: MaterialsComponent;
+  let fixture: ComponentFixture<MaterialsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MaterialComponent ]
+      declarations: [ MaterialsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MaterialComponent);
+    fixture = TestBed.createComponent(MaterialsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

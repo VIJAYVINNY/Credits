@@ -19,7 +19,7 @@ import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
 import { ArcreactComponent } from './arcreact/arcreact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module';
+import { MaterialsModule } from './materials/materials.module';
 
 
 
@@ -40,6 +40,7 @@ import { MaterialModule } from './material/material.module';
     ImplementingComponent,
     TemplateComponent,
     ArcreactComponent,
+  
     ],
 
 
@@ -50,7 +51,7 @@ import { MaterialModule } from './material/material.module';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialsModule
 
 
   ],

@@ -13,7 +13,8 @@ import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
 import { ArcreactComponent } from './arcreact/arcreact.component';
-import { MaterialComponent } from './material/material.component';
+import { MaterialsComponent } from './materials/materials.component';
+import { MaterialsModule } from './materials/materials.module';
 
 
 const routes: Routes = [
@@ -31,13 +32,13 @@ const routes: Routes = [
   {path:'implements',component:ImplementingComponent},
   {path:'template',component:TemplateComponent},
   {path:'arcreact',component:ArcreactComponent},
-  {path:'material',component:MaterialComponent}
+  {path:'materials',component:MaterialsComponent},
 
 ];
 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule,MaterialsModule]
 })
 export class AppRoutingModule { }
