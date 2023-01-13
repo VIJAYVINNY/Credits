@@ -11,16 +11,17 @@ import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AuthorizeComponent } from './authorize/authorize.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+// import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { MethodsComponent } from './methods/methods.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
-import { TemplateComponent } from './template/template.component';
+// import { TemplateComponent } from './template/template.component';
 import { ArcreactComponent } from './arcreact/arcreact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialsModule } from './materials/materials.module';
-
+import { TemplateModule } from './template/template.module';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
@@ -34,13 +35,13 @@ import { MaterialsModule } from './materials/materials.module';
     LoginComponent,
     PagenotfoundComponent,
     AuthorizeComponent,
-    ReactiveformComponent,
+    // ReactiveformComponent,
     MethodsComponent,
     ListEmployeeComponent,
     ImplementingComponent,
-    TemplateComponent,
+    // TemplateComponent,
     ArcreactComponent,
-  
+
     ],
 
 
@@ -51,7 +52,10 @@ import { MaterialsModule } from './materials/materials.module';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialsModule
+    MaterialsModule,
+    TemplateModule,MatToolbarModule
+
+
 
 
   ],
