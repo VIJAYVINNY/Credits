@@ -21,7 +21,6 @@ import { ArcreactComponent } from './arcreact/arcreact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialsModule } from './materials/materials.module';
 import { TemplateModule } from './template/template.module';
-import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
@@ -53,7 +52,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialsModule,
-    TemplateModule,MatToolbarModule
+    TemplateModule,
 
 
 
