@@ -34,7 +34,7 @@ const routes: Routes = [
   {path:'arcreact',component:ArcreactComponent},
   {path:'materials',component:MaterialsComponent},
 
-];
+];  
 
 
 @NgModule({
