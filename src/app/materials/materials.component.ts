@@ -13,9 +13,9 @@ export class MaterialsComponent implements OnInit {
   color: ThemePalette = 'primary';
   mode: ProgressSpinnerMode = 'determinate';
   value = 50;
+
   constructor() { }
   hidden = false;
-
 
   toggleBadgeVisibility() {
     this.hidden = !this.hidden;
