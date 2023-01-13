@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 
-
 @NgModule({
   declarations: [TemplateComponent],
 
