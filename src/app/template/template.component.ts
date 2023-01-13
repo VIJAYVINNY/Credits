@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, NgForm } from '@angular/forms';
-import { types } from './template';
 
 @Component({
   selector: 'app-template',

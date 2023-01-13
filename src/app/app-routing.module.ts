@@ -17,6 +17,7 @@ import { MaterialsComponent } from './materials/materials.component';
 import { MaterialsModule } from './materials/materials.module';
 
 
+
 const routes: Routes = [
   // {path:'',redirectTo:'corporate',pathMatch:"full"},
 
