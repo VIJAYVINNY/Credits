@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { types } from './template';
+import { FormBuilder, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-template',
@@ -8,17 +7,26 @@ import { types } from './template';
   styleUrls: ['./template.component.scss']
 })
 export class TemplateComponent implements OnInit {
-firstname: any;
-terms:boolean=false;
-list:string='';
 
-  constructor() { }
-  addDetails(formValue:NgForm){
-console.log(formValue.value);
+  firstname: any;
+  terms: boolean = false;
+  list: string = '';
+  address: string = '';
 
+  // datatypes:types=new this.datatypes();
+  constructor(private formBuilder: FormBuilder) { }
+
+  addDetails(formValue: NgForm) {
+    console.log(formValue.value);
+  }
+
+  resetData(formValue: NgForm) {
+    // formValue.reset();
+    formValue.resetForm();
   }
 
   ngOnInit(): void {
+
   }
 
 }

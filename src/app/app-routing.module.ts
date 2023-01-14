@@ -12,6 +12,10 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
+import { ArcreactComponent } from './arcreact/arcreact.component';
+import { MaterialsComponent } from './materials/materials.component';
+import { MaterialsModule } from './materials/materials.module';
+
 
 
 const routes: Routes = [
@@ -28,12 +32,14 @@ const routes: Routes = [
   {path:'listemployee',component:ListEmployeeComponent},
   {path:'implements',component:ImplementingComponent},
   {path:'template',component:TemplateComponent},
+  {path:'arcreact',component:ArcreactComponent},
+  {path:'materials',component:MaterialsComponent},
 
-];
+];  
 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule,MaterialsModule]
 })
 export class AppRoutingModule { }

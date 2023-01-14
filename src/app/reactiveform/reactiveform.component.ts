@@ -8,6 +8,8 @@ import { EnrollmentService } from 'src/services/enrollment.service';
   styleUrls: ['./reactiveform.component.scss'],
 })
 export class ReactiveformComponent implements OnInit {
+  notifivation=4
+
   // subjects=['C#','ASP','JAVA','SQL','MongoDB','ASP.NET TUTORIALS','qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq',"sdfsdsdgdgggasdgdsgsgsdgsdgsdgsdgsdggasdgsdgtwetaeratqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqdhdfh"];
 
   subjects = ['C#', 'ASP', 'JAVA', 'SQL', 'MongoDB'];
