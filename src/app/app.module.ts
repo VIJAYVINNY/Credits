@@ -20,7 +20,16 @@ import { ArcreactComponent } from './arcreact/arcreact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatCardModule} from '@angular/material/card';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -41,15 +50,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     ],
 
   imports: [
-    FormsModule,
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,MatToolbarModule
+    FormsModule,MatButtonToggleModule,MatIconModule,MatBadgeModule,
+    BrowserModule,MatProgressSpinnerModule,MatCardModule,
+    AppRoutingModule,MatTooltipModule,
+    HttpClientModule,MatRadioModule,
+    BrowserAnimationsModule,MatSliderModule,
+    ReactiveFormsModule,MatToolbarModule,MatTabsModule,MatSidenavModule
 
   ],
-  
+
   providers: [
 
 
