@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
-import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-materials',
@@ -8,10 +7,10 @@ import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
   styleUrls: ['./materials.component.scss']
 })
 export class MaterialsComponent implements OnInit {
+
   notifivation = 6;
 
   color: ThemePalette = 'primary';
-  mode: ProgressSpinnerMode = 'determinate';
   value = 50;
 
   constructor() { }
@@ -30,8 +29,6 @@ export class MaterialsComponent implements OnInit {
     }, 4000)
 
   }
-
-
 
   ngOnInit(): void {
   }
