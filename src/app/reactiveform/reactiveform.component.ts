@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
-import { EnrollmentService } from '../enrollment.service';
+import { EnrollmentService } from 'src/services/enrollment.service';
 
 @Component({
   selector: 'app-reactiveform',
