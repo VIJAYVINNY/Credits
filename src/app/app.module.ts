@@ -17,6 +17,7 @@ import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
 import { ArcreactComponent } from './arcreact/arcreact.component';
+import { MaterialsComponent } from './materials/materials.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -30,6 +31,7 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 @NgModule({
@@ -48,22 +50,21 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     ImplementingComponent,
     TemplateComponent,
     ArcreactComponent,
+    MaterialsComponent
     ],
 
-  imports: [
+  imports: [AppRoutingModule,
     FormsModule,MatButtonToggleModule,MatIconModule,MatBadgeModule,
     BrowserModule,MatProgressSpinnerModule,MatCardModule,
-    AppRoutingModule,MatTooltipModule,
+    MatTooltipModule,
     HttpClientModule,MatRadioModule,
     BrowserAnimationsModule,MatSliderModule,
     ReactiveFormsModule,MatToolbarModule,MatTabsModule,MatSidenavModule
 
   ],
 
-  providers: [
+  providers: [],
 
-
-],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
