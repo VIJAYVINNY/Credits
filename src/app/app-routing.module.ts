@@ -15,12 +15,13 @@ import { TemplateComponent } from './template/template.component';
 import { ArcreactComponent } from './arcreact/arcreact.component';
 import { MaterialsComponent } from './materials/materials.component';
 import { MaterialsModule } from './materials/materials.module';
+import { MethodsComponent } from './methods/methods.component';
 
 
 
 const routes: Routes = [
-  // {path:'',redirectTo:'corporate',pathMatch:"full"},
 
+  {path:'method',component:MethodsComponent},
   {path:'authorize',component:AuthorizeComponent},
   {path:'pagenotfound',component:PagenotfoundComponent},
   {path:'login',component:LoginComponent},
@@ -35,7 +36,7 @@ const routes: Routes = [
   {path:'arcreact',component:ArcreactComponent},
   {path:'materials',component:MaterialsComponent},
 
-];  
+];
 
 
 @NgModule({

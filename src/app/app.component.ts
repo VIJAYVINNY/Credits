@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ContactsService } from 'src/services/contacts.service';
 
 
 @Component({

@@ -16,7 +16,7 @@ import { MethodsComponent } from './methods/methods.component';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
-import { ArcreactComponent } from './arcreact/arcreact.component';
+// import { ArcreactComponent } from './arcreact/arcreact.component';
 import { MaterialsComponent } from './materials/materials.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -31,6 +31,7 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { ArcreactModule } from './arcreact/arcreact.module';
 
 
 
@@ -49,11 +50,11 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     ListEmployeeComponent,
     ImplementingComponent,
     TemplateComponent,
-    ArcreactComponent,
+    // ArcreactComponent,
     MaterialsComponent
     ],
 
-  imports: [AppRoutingModule,
+  imports: [AppRoutingModule,ArcreactModule,
     FormsModule,MatButtonToggleModule,MatIconModule,MatBadgeModule,
     BrowserModule,MatProgressSpinnerModule,MatCardModule,
     MatTooltipModule,
