@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
+
 @Component({
   selector: 'app-arcreact',
   templateUrl: './arcreact.component.html',
@@ -12,6 +13,7 @@ export class ArcreactComponent implements OnInit {
   constructor(public fb: FormBuilder ) { }
 
   ngOnInit(): void {
+
     // this.loanInfoForm=new FormGroup({
     //   'loanName':new FormControl(),
     //   'loanType':new FormControl()
