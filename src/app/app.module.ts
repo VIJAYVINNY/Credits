@@ -32,6 +32,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ArcreactModule } from './arcreact/arcreact.module';
 import { ChandruModule } from './chandru/chandru.module';
+import {MatListModule} from '@angular/material/list';
 
 
 
@@ -72,7 +73,8 @@ import { ChandruModule } from './chandru/chandru.module';
     MatSidenavModule,
     MatMenuModule,
     ArcreactModule,
-    ChandruModule
+    ChandruModule,
+    MatListModule
   ],
 
   providers: [],

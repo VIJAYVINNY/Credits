@@ -9,9 +9,9 @@ import {HttpClient,HttpHeaders,HttpParams} from '@angular/common/http';
 })
 export class ContactsComponent implements OnInit {
 
-  constructor(private contactsService:ContactsService) { }
+  constructor(protected contactsService:ContactsService) { }
 
-  contactList:any;  
+  contactList:any;
   // createpage:any;
   // constructor(){}
 
