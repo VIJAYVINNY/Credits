@@ -1,4 +1,4 @@
-<form #dataForm="ngForm" (submit)="addDetails(dataForm)">
+<!-- <form #dataForm="ngForm" (submit)="addDetails(dataForm)">
     <input type="text" name="firstname" [(ngModel)]="firstname" required>
     <br/>
 
@@ -13,15 +13,21 @@
     <button type="submit" class="btn btn-primary mt-2" [disabled]="!dataForm.valid">Submit</button>
     <button type="reset" class="btn btn-link mt-2" (click)="resetData(dataForm)"> Reset</button>
 </form>
-<hr>
+<hr> -->
 
-<mat-toolbar color="primary" class="navbar">
+<!-- <mat-toolbar color="primary" class="navbar">
     <div>Code Resolution</div>
     <div>
         <span>Home</span>
         <span>About</span>
         <span>Services</span>
     </div>
-</mat-toolbar>
+</mat-toolbar> -->
+
+<mat-sidenav-container>
+  <mat-sidenav>Sidenav</mat-sidenav>
+<mat-sidenav-content>Main</mat-sidenav-content>
+</mat-sidenav-container>
+
 
 
