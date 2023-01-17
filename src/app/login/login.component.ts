@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { 
-    
+  opened=false //This is one way to implement toggle in Open and  Close
+  log(state:any){
+   console.log(state);
+  }
+
+  constructor() {
+
   }
 
   ngOnInit(): void {
