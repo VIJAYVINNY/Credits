@@ -18,15 +18,52 @@
     </div>
 </mat-toolbar> -->
 
-<mat-sidenav-container>
-  <mat-sidenav #sidenav mode="side" [(opened)]="opened">Sidenav</mat-sidenav>
+<!-- Matsidenavbar  Works -->
+
+<!-- <mat-sidenav-container>
+  <mat-sidenav #sidenav (opened)="log('opened')" (closed)="log('closed')" mode="side" [(opened)]="opened">Sidenav</mat-sidenav>
   <mat-sidenav-content>Main
     <button (click)="opened=!opened">ToggleOpen</button>
     <button (click)="sidenav.open()">Open</button>
     <button (click)="sidenav.close()">Close</button>
     <button (click)="sidenav.toggle()">Toggle</button>
   </mat-sidenav-content>
-</mat-sidenav-container>
+</mat-sidenav-container>  -->
+
+ <!-- MatMenu Work -->
+<mat-menu #appMenu="matMenu" >
+  <button mat-menu-item [mat-menu-trigger-for]="frontmenu">FrontEnd</button>
+  <button mat-menu-item [mat-menu-trigger-for]="backmenu">BackEnd</button>
+</mat-menu>
+
+<button mat-flat-button [mat-menu-trigger-for]="appMenu" class="center">Menu</button>
+
+<mat-menu  #frontmenu="matMenu">
+  <button mat-menu-item>Angular</button>
+  <button mat-menu-item>React</button>
+  <button mat-menu-item>VueJs</button>
+</mat-menu>
+
+<mat-menu  #backmenu="matMenu">
+  <button mat-menu-item>C#</button>
+  <button mat-menu-item>Java</button>
+  <button mat-menu-item>Python</button>
+</mat-menu>
+
+<mat-menu #lazyMenu="matMenu">
+  <ng-template matMenuContent let-name="name" let-hobby="hobby" >
+    <button  mat-menu-item >Setting</button>
+    <button  mat-menu-item >Hobby is:{{hobby}}</button>
+    <button  mat-menu-item >LogOut{{name}}</button>
+  </ng-template>
+</mat-menu>
+
+<button mat-raised-button
+[matMenuTriggerData]="{name:'Vijay',hobby:'Chess'}"
+[mat-menu-trigger-for]="lazyMenu">Vijay</button>
 
 
 
+<button mat-raised-button
+[matMenuTriggerData]="{name:'Ajay',hobby:'cricket'}"
+[mat-menu-trigger-for]="lazyMenu">Ajay</button>

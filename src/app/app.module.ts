@@ -28,6 +28,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ArcreactModule } from './arcreact/arcreact.module';
 import { ChandruModule } from './chandru/chandru.module';
@@ -69,6 +70,7 @@ import { ChandruModule } from './chandru/chandru.module';
     MatToolbarModule,
     MatTabsModule,
     MatSidenavModule,
+    MatMenuModule,
     ArcreactModule,
     ChandruModule
   ],
