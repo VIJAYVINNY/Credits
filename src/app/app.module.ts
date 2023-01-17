@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { CorporateComponent } from './corporate/corporate.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { ChandruComponent } from './chandru/chandru.component';
 import { TodoComponent } from './todo/todo.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -16,7 +15,6 @@ import { MethodsComponent } from './methods/methods.component';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
-// import { ArcreactComponent } from './arcreact/arcreact.component';
 import { MaterialsComponent } from './materials/materials.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -32,6 +30,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ArcreactModule } from './arcreact/arcreact.module';
+import { ChandruModule } from './chandru/chandru.module';
 
 
 
@@ -40,7 +39,6 @@ import { ArcreactModule } from './arcreact/arcreact.module';
     AppComponent,
     CorporateComponent,
     ContactsComponent,
-    ChandruComponent,
     TodoComponent,
     LoginComponent,
     PagenotfoundComponent,
@@ -50,18 +48,29 @@ import { ArcreactModule } from './arcreact/arcreact.module';
     ListEmployeeComponent,
     ImplementingComponent,
     TemplateComponent,
-    // ArcreactComponent,
     MaterialsComponent
     ],
 
-  imports: [AppRoutingModule,ArcreactModule,
-    FormsModule,MatButtonToggleModule,MatIconModule,MatBadgeModule,
-    BrowserModule,MatProgressSpinnerModule,MatCardModule,
+  imports: [AppRoutingModule,
+    ArcreactModule,
+    FormsModule,
+    MatButtonToggleModule,
+    MatIconModule,
+    MatBadgeModule,
+    BrowserModule,
+    MatProgressSpinnerModule,
+    MatCardModule,
     MatTooltipModule,
-    HttpClientModule,MatRadioModule,
-    BrowserAnimationsModule,MatSliderModule,
-    ReactiveFormsModule,MatToolbarModule,MatTabsModule,MatSidenavModule
-
+    HttpClientModule,
+    MatRadioModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    ReactiveFormsModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatSidenavModule,
+    ArcreactModule,
+    ChandruModule
   ],
 
   providers: [],
