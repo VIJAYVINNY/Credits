@@ -9,14 +9,14 @@
 
 </form> -->
 
-<!-- <mat-toolbar color="primary" class="navbar">
+ <mat-toolbar color="primary" class="navbar">
     <div>Code Evalution</div>
     <div>
         <span>Home</span>
         <span>About</span>
         <span>Services</span>
     </div>
-</mat-toolbar> -->
+</mat-toolbar>
 
 <!-- Matsidenavbar  Works -->
 
@@ -28,15 +28,17 @@
     <button (click)="sidenav.close()">Close</button>
     <button (click)="sidenav.toggle()">Toggle</button>
   </mat-sidenav-content>
-</mat-sidenav-container>  -->
+</mat-sidenav-container> -->
 
  <!-- MatMenu Work -->
+
+
+<button mat-flat-button [mat-menu-trigger-for]="appMenu" class="center">Menu</button>
+
 <mat-menu #appMenu="matMenu" >
   <button mat-menu-item [mat-menu-trigger-for]="frontmenu">FrontEnd</button>
   <button mat-menu-item [mat-menu-trigger-for]="backmenu">BackEnd</button>
 </mat-menu>
-
-<button mat-flat-button [mat-menu-trigger-for]="appMenu" class="center">Menu</button>
 
 <mat-menu  #frontmenu="matMenu">
   <button mat-menu-item>Angular</button>
