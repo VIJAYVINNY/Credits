@@ -6,7 +6,6 @@ import {FormsModule} from '@angular/forms';
 import { CorporateComponent } from './corporate/corporate.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TodoComponent } from './todo/todo.component';
-import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AuthorizeComponent } from './authorize/authorize.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -33,11 +32,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { ArcreactModule } from './arcreact/arcreact.module';
 import { ChandruModule } from './chandru/chandru.module';
 import {MatListModule} from '@angular/material/list';
-
-
-
-
-
+import { LoginModule } from './login/login.module';
 
 
 @NgModule({
@@ -46,7 +41,6 @@ import {MatListModule} from '@angular/material/list';
     CorporateComponent,
     ContactsComponent,
     TodoComponent,
-    LoginComponent,
     PagenotfoundComponent,
     AuthorizeComponent,
     ReactiveformComponent,
@@ -57,7 +51,8 @@ import {MatListModule} from '@angular/material/list';
     MaterialsComponent
     ],
 
-  imports: [AppRoutingModule,
+  imports:
+   [AppRoutingModule,
     ArcreactModule,
     FormsModule,
     MatButtonToggleModule,
@@ -78,7 +73,8 @@ import {MatListModule} from '@angular/material/list';
     MatMenuModule,
     ArcreactModule,
     ChandruModule,
-    MatListModule
+    MatListModule,
+    LoginModule
   ],
 
   providers: [],
