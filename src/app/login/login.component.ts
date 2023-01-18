@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginModule } from './login.module';
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,17 +9,16 @@ import { LoginModule } from './login.module';
 export class LoginComponent implements OnInit {
 
   opened=false //This is one way to implement toggle in Open and  Close
-  log(state:any){
+
+  log(state:any)
+  {
    console.log(state);
   }
 
-  constructor(public loginModule:LoginModule) {
+  constructor() {}
 
-  }
-
+  
   ngOnInit(): void {
-
-
     }
   }
 
