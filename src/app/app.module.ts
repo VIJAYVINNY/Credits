@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
-import { CorporateComponent } from './corporate/corporate.component';
+// import { CorporateComponent } from './corporate/corporate.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TodoComponent } from './todo/todo.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -33,12 +33,13 @@ import { ArcreactModule } from './arcreact/arcreact.module';
 import { ChandruModule } from './chandru/chandru.module';
 import {MatListModule} from '@angular/material/list';
 import { LoginModule } from './login/login.module';
+import { CorporateModule } from './corporate/corporate.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CorporateComponent,
+    // CorporateComponent,
     ContactsComponent,
     TodoComponent,
     PagenotfoundComponent,
@@ -74,7 +75,8 @@ import { LoginModule } from './login/login.module';
     ArcreactModule,
     ChandruModule,
     MatListModule,
-    LoginModule
+    LoginModule,
+    CorporateModule
   ],
 
   providers: [],
