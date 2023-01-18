@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
 
   
   constructor() {}
-
+  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
 
   ngOnInit(): void {
     }
