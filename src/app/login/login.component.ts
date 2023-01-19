@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Tile } from '@angular/material/grid-list/tile-coordinator';
 
 @Component({
   selector: 'app-login',
@@ -15,12 +15,13 @@ export class LoginComponent implements OnInit {
    console.log(state);
   }
 
-  
   constructor() {}
   typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
 
-  ngOnInit(): void {
+    ngOnInit(): void {
     }
+
+  
   }
 
 

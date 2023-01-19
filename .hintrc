@@ -24,6 +24,7 @@
         "duplicate-id-active": "off"
       }
     ],
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "no-inline-styles": "off"
   }
 }

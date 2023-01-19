@@ -32,7 +32,7 @@
 
 <!-- MatMenu Work -->
 
-<!-- 
+<!--
 <button mat-flat-button [mat-menu-trigger-for]="appMenu" class="center">Menu</button>
 
 <mat-menu #appMenu="matMenu">
@@ -120,8 +120,12 @@
     </p>
 </div> -->
 
-<mat-list>
 
-    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-
-</mat-list>
+<mat-grid-list cols="5">
+  <mat-grid-tile colspan="3"  style="background-color: bisque;">1</mat-grid-tile>
+  <mat-grid-tile rowspan="3" style="background-color: rgb(225, 137, 30);">2</mat-grid-tile>
+  <mat-grid-tile style="background-color: rgb(53, 147, 215);">3</mat-grid-tile>
+  <mat-grid-tile style="background-color: rgb(175, 226, 57);">4</mat-grid-tile>
+  <mat-grid-tile style="background-color: rgb(94, 222, 55);">5</mat-grid-tile>
+  <mat-grid-tile>6</mat-grid-tile>
+</mat-grid-list>
