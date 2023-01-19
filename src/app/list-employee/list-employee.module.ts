@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { ListEmployeeComponent } from './list-employee.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ ListEmployeeComponent],
   imports: [
-    CommonModule
+    CommonModule,MatExpansionModule
   ]
 })
 export class ListEmployeeModule { }
