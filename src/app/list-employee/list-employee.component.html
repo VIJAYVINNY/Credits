@@ -53,3 +53,187 @@
         </div>
     </div>
 </div> -->
+
+<!-- <mat-accordion>
+<mat-expansion-panel>
+<mat-expansion-panel-header>
+  <mat-panel-title>
+    FrontEnd EntireCourse:
+  </mat-panel-title>
+  <mat-panel-description>
+    Duration:5Hours
+  </mat-panel-description>
+</mat-expansion-panel-header>
+<p>This is an  Entire Course regarding FrontEnd with HTML,CSS, JavaScript and Bootstarp</p>
+<details>
+ <li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+</details>
+<mat-action-row>
+  <button class="btn btn-success">Enroll</button>
+</mat-action-row>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      BackEnd EntireCourse:
+    </mat-panel-title>
+    <mat-panel-description>
+      Duration:12Hours
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <p>This is an  Entire Course regarding FrontEnd with C#,ASP and SQL</p>
+  <details>
+   <li>C#</li>
+  <li>SQL</li>
+  <li>ASP</li>
+  </details>
+  <mat-action-row>
+    <button class="btn btn-info">Enroll</button>
+  </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion> -->
+
+
+<!-- <mat-card>
+  <mat-card-header>
+    <mat-card-title>Actions Buttons</mat-card-title>
+    <mat-card-subtitle>Start</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions>
+    <button mat-button class="btn btn-primary" >LIKE</button>
+    <button mat-button color="primary">SHARE</button>
+  </mat-card-actions>
+</mat-card>
+<br>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Actions Buttons</mat-card-title>
+    <mat-card-subtitle>End</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions align="end">
+    <button mat-button class="btn btn-primary">LIKE</button>
+    <button mat-button class="btn btn-warning">SHARE</button>
+  </mat-card-actions>
+</mat-card> -->
+
+<!-- <mat-tab-group>
+  <mat-tab label="FrontEnd">FrontEnd</mat-tab>
+  <mat-tab label="BackEnd">BackEnd</mat-tab>
+  <mat-tab label="WeekEnd">WeekEnd</mat-tab>
+</mat-tab-group> -->
+
+<!-- <mat-tab-group>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+      First
+    </ng-template>
+    Content 1
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+      Second
+    </ng-template>
+    Content 2
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+      Third
+    </ng-template>
+    Content 3
+  </mat-tab>
+</mat-tab-group> -->
+
+<!-- <mat-vertical-stepper>
+<mat-step label="Shipping Address"><p>Stepping Address</p>
+  <div>
+    <button mat-button matStepperNext>Next</button>
+  </div>
+</mat-step>
+
+<mat-step label="OrderAddress"><p>Order_Status</p>
+<div>
+  <button mat-button  matStepperPrevious>Back</button>
+  <button mat-button matStepperNext>Next</button>
+</div>
+</mat-step>
+<mat-step label="OrderDetails"><p>Order_Details</p>
+  <div>
+    <button mat-button  matStepperPrevious>Back</button>
+    <button mat-button matStepperNext>Next</button>
+  </div>
+</mat-step>
+</mat-vertical-stepper> -->
+
+<!-- <mat-horizontal-stepper>  <mat-step label="Shipping Address"><p>Stepping Address</p>
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+
+  <mat-step label="OrderAddress"><p>Order_Status</p>
+  <div>
+    <button mat-button  matStepperPrevious>Back</button>
+    <button mat-button matStepperNext>Next</button>
+  </div>
+  </mat-step>
+  <mat-step label="OrderDetails"><p>Order_Details</p>
+    <div>
+      <button mat-button  matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper> -->
+
+
+
+   <!-- <mat-step label="Shipping Address"><p>Stepping Address</p>
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+
+  <mat-step label="OrderAddress"><p>Order_Status</p>
+  <div>
+    <button mat-button  matStepperPrevious>Back</button>
+    <button mat-button matStepperNext>Next</button>
+  </div>
+  </mat-step>
+  <mat-step label="OrderDetails"><p>Order_Details</p>
+    <div>
+      <button mat-button  matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step> -->
+
+  <!-- <mat-form-field floatLabel="auto" hideRequiredMarker>
+    <mat-label for="name">FirstName</mat-label>
+    <mat-hint align="end">Min 5 Characters</mat-hint>
+    <input matInput required>
+  </mat-form-field><br>
+
+  <mat-form-field floatLabel="auto" hideRequiredMarker>
+    <mat-label for="name">LastName</mat-label>
+    <input matInput required="Please enter name">
+  </mat-form-field> -->
+
+  <mat-form-field class="example-form-field">
+    <mat-label>Clearable input</mat-label>
+    <input matInput type="text" [(ngModel)]="value">
+    <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+
+
+
+
+

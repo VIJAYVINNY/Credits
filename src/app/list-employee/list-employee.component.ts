@@ -8,6 +8,7 @@ import { Employee } from './models/employee.model';
 })
 export class ListEmployeeComponent implements OnInit {
 
+  value = 'Clear me';
   constructor() { }
 
   ngOnInit(): void {
