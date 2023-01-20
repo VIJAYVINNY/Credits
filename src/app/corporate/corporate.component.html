@@ -1,34 +1,65 @@
-<p>corporate works!</p>
+<!-- <mat-form-field>
+  <mat-label>Topics</mat-label>
+  <mat-select [(value)]="selectedvalue">
+  <mat-option  value="frontend">FrontEnd😀</mat-option>
+  <mat-option value="backend">BackEnd😀</mat-option>
+  <mat-option value="weekend">WeekEnd😀</mat-option>
+</mat-select>
+</mat-form-field>
 
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="bg-primary p-3 text-white mb-3">
-                1St Row Column
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="bg-warning p-3 text-white mb-3">
-                        new column
-                    </div>
-                </div>
-                <div class="col-md-3">
-                  
-                    <div class="bg-primary p-3 text-white mb-3">
-                        new column
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="bg-info p-3 text-white mb-3">
-                        new column
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="bg-secondary p-3 text-white mb-3">
-                        new column
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   </div> -->
+{{selectedvalue}}is selected -->
+
+
+
+<!-- <form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Number</mat-label>
+    <input type="text"
+           placeholder="Pick one"
+           aria-label="Number"
+           matInput
+           [formControl]="myControl"
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form> -->
+
+<!-- <form>
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto" FormControl="myControl"/>
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayData">
+      <mat-option *ngFor="let course of types" [value]="course">
+        {{course.name}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form> -->
+<!-- <h1>WeekEnd😀 Enjoy Kharo bhayya..Eppudu panenaaaa neeeee pilla bachha nayalllaaaaa</h1> -->
+<mat-checkbox>
+  subscribe
+</mat-checkbox><br/>
+
+<mat-checkbox labelPosition="before">
+  subscribe
+</mat-checkbox><br/>
+
+<mat-checkbox color="primary">
+  subscribe
+</mat-checkbox>
+<mat-checkbox color="accent">
+  subscribe
+</mat-checkbox>
+
+<hr>
+<mat-radio-group >
+  <mat-radio-button value="fronted" color="warn">FrontEnd</mat-radio-button>
+  <mat-radio-button value="backend" color="primary">BackEnd</mat-radio-button>
+  <mat-radio-button value="weekend" color="accent">WeekEnd</mat-radio-button>
+</mat-radio-group><br>
+<div>
+<mat-radio-button value="fronted">FrontEnd</mat-radio-button>
+</div>

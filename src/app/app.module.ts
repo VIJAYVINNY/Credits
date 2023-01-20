@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
-// import { CorporateComponent } from './corporate/corporate.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TodoComponent } from './todo/todo.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -11,8 +10,6 @@ import { AuthorizeComponent } from './authorize/authorize.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { MethodsComponent } from './methods/methods.component';
-// import { ListEmployeeComponent } from './list-employee/list-employee.component';
-import { ImplementingComponent } from './implementing/implementing.component';
 import { TemplateComponent } from './template/template.component';
 import { MaterialsComponent } from './materials/materials.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,31 +26,32 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { ArcreactModule } from './arcreact/arcreact.module';
-import { ChandruModule } from './chandru/chandru.module';
+import {ArcreactModule } from './arcreact/arcreact.module';
+import {ChandruModule } from './chandru/chandru.module';
 import {MatListModule} from '@angular/material/list';
-import { LoginModule } from './login/login.module';
-import { CorporateModule } from './corporate/corporate.module';
-import { ListEmployeeModule } from './list-employee/list-employee.module';
+import {LoginModule } from './login/login.module';
+import {CorporateModule } from './corporate/corporate.module';
+import {ListEmployeeModule } from './list-employee/list-employee.module';
+import { ImplementingModule } from './implementing/implementing.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-
     ContactsComponent,
     TodoComponent,
     PagenotfoundComponent,
     AuthorizeComponent,
     ReactiveformComponent,
     MethodsComponent,
-    // ListEmployeeComponent,
-    ImplementingComponent,
     TemplateComponent,
     MaterialsComponent
     ],
 
+
   imports:
    [AppRoutingModule,
+    ImplementingModule,
     ListEmployeeModule,
     ArcreactModule,
     FormsModule,
