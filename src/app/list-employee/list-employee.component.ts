@@ -15,7 +15,6 @@ export class ListEmployeeComponent implements OnInit {
   }
   Pagetitle: string = "OPTEVUS Employee  Details";
   showImages: boolean = false;
-
   listFilter: string = "";
   toggleImage() {
     this.showImages = !this.showImages;

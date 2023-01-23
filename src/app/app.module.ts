@@ -31,8 +31,7 @@ import {ChandruModule } from './chandru/chandru.module';
 import {MatListModule} from '@angular/material/list';
 import {LoginModule } from './login/login.module';
 import {CorporateModule } from './corporate/corporate.module';
-import {ListEmployeeModule } from './list-employee/list-employee.module';
-import { ImplementingModule } from './implementing/implementing.module';
+import { AllinoneModule } from './allinone/allinone.module';
 
 
 @NgModule({
@@ -51,8 +50,6 @@ import { ImplementingModule } from './implementing/implementing.module';
 
   imports:
    [AppRoutingModule,
-    ImplementingModule,
-    ListEmployeeModule,
     ArcreactModule,
     FormsModule,
     MatButtonToggleModule,
@@ -75,7 +72,9 @@ import { ImplementingModule } from './implementing/implementing.module';
     ChandruModule,
     MatListModule,
     LoginModule,
-    CorporateModule
+    CorporateModule,
+    AllinoneModule
+
   ],
 
   providers: [],
