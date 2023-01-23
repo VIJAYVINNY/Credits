@@ -21,7 +21,7 @@ import { MethodsComponent } from './methods/methods.component';
 
 const routes: Routes = [
 
-  {path:'method',component:MethodsComponent},
+  {path:'methods',component:MethodsComponent},
   {path:'authorize',component:AuthorizeComponent},
   {path:'pagenotfound',component:PagenotfoundComponent},
   {path:'login',component:LoginComponent},

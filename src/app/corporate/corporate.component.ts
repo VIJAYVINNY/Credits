@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
-
+import {FormGroup, FormControl} from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
@@ -15,21 +15,26 @@ export class CorporateComponent implements OnInit {
 
   disableSelect = new FormControl(false);
 
-  constructor() { }
+  constructor(private snackBar:MatSnackBar) { }
 
+
+  openScackBar(message:any,action:any){
+
+this.snackBar.open(message,action);
+  }
   ngOnInit(): void { }
 
   Courses: string[] = ['FrontEnd', 'BackEnd', 'WeekEnd'];
 
-  types = [
-    { name: 'C#' },
-    { name: 'Java' },
-    { name: 'SQL' },
-    { name: 'MongoDB' }
-  ];
+  // types = [
+  //   { name: 'C#' },
+  //   { name: 'Java' },
+  //   { name: 'SQL' },
+  //   { name: 'MongoDB' }
+  // ];
 
-  displayData(subject:any){
-    return subject ? subject.name:undefined;
-  }
-  myControl=new  FormControl();
+  // displayData(subject:any){
+  //   return subject ? subject.name:undefined;
+  // }
+
 }
