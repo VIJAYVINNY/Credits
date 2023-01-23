@@ -9,7 +9,6 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AuthorizeComponent } from './authorize/authorize.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
-import { MethodsComponent } from './methods/methods.component';
 import { TemplateComponent } from './template/template.component';
 import { MaterialsComponent } from './materials/materials.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -31,7 +30,7 @@ import {ChandruModule } from './chandru/chandru.module';
 import {MatListModule} from '@angular/material/list';
 import {LoginModule } from './login/login.module';
 import {CorporateModule } from './corporate/corporate.module';
-import { AllinoneModule } from './allinone/allinone.module';
+import {AllinoneModule } from './allinone/allinone.module';
 
 
 @NgModule({
@@ -42,7 +41,6 @@ import { AllinoneModule } from './allinone/allinone.module';
     PagenotfoundComponent,
     AuthorizeComponent,
     ReactiveformComponent,
-    MethodsComponent,
     TemplateComponent,
     MaterialsComponent
     ],
