@@ -31,6 +31,9 @@ import {MatListModule} from '@angular/material/list';
 import {LoginModule } from './login/login.module';
 import {CorporateModule } from './corporate/corporate.module';
 import {AllinoneModule } from './allinone/allinone.module';
+import { OfflineModule } from './offline/offline.module';
+import { DialogModule } from './dialog/dialog.module';
+
 
 
 @NgModule({
@@ -42,7 +45,8 @@ import {AllinoneModule } from './allinone/allinone.module';
     AuthorizeComponent,
     ReactiveformComponent,
     TemplateComponent,
-    MaterialsComponent
+    MaterialsComponent,
+
     ],
 
 
@@ -53,6 +57,7 @@ import {AllinoneModule } from './allinone/allinone.module';
     MatButtonToggleModule,
     MatIconModule,
     MatBadgeModule,
+    DialogModule,
     BrowserModule,
     MatProgressSpinnerModule,
     MatCardModule,
@@ -71,8 +76,8 @@ import {AllinoneModule } from './allinone/allinone.module';
     MatListModule,
     LoginModule,
     CorporateModule,
-    AllinoneModule
-
+    AllinoneModule,
+    OfflineModule
   ],
 
   providers: [],

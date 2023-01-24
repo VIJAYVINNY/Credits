@@ -8,6 +8,7 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 })
 export class ArcreactComponent implements OnInit {
 
+
   loanInfoForm!: FormGroup;
   constructor(public fb: FormBuilder ) { }
 

@@ -16,7 +16,7 @@ import { ArcreactComponent } from './arcreact/arcreact.component';
 import { MaterialsComponent } from './materials/materials.component';
 import { MaterialsModule } from './materials/materials.module';
 import { MethodsComponent } from './methods/methods.component';
-
+import { OfflineComponent } from './offline/offline.component';
 
 
 const routes: Routes = [
@@ -35,6 +35,9 @@ const routes: Routes = [
   {path:'template',component:TemplateComponent},
   {path:'arcreact',component:ArcreactComponent},
   {path:'materials',component:MaterialsComponent},
+  {path:'offline',component:OfflineComponent },
+
+
 
 ];
 
