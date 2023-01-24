@@ -32,7 +32,7 @@ import {LoginModule } from './login/login.module';
 import {CorporateModule } from './corporate/corporate.module';
 import {AllinoneModule } from './allinone/allinone.module';
 import { OfflineModule } from './offline/offline.module';
-
+import { DialogModule } from './dialog/dialog.module';
 
 
 
@@ -46,6 +46,7 @@ import { OfflineModule } from './offline/offline.module';
     ReactiveformComponent,
     TemplateComponent,
     MaterialsComponent,
+
     ],
 
 
@@ -56,6 +57,7 @@ import { OfflineModule } from './offline/offline.module';
     MatButtonToggleModule,
     MatIconModule,
     MatBadgeModule,
+    DialogModule,
     BrowserModule,
     MatProgressSpinnerModule,
     MatCardModule,
