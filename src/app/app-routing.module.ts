@@ -35,7 +35,8 @@ const routes: Routes = [
   {path:'template',component:TemplateComponent},
   {path:'arcreact',component:ArcreactComponent},
   {path:'materials',component:MaterialsComponent},
-  {path:'offline',component:OfflineComponent }
+  {path:'offline',component:OfflineComponent },
+
 
 
 ];

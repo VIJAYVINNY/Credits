@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Food } from './dialog.model';
 
 @Component({
   selector: 'app-dialog',
@@ -12,6 +12,11 @@ export class DialogComponent implements OnInit {
 
   ngOnInit(): void { }
 
+  foods: Food[] = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'},
+  ];
 
   }
 
