@@ -31,7 +31,9 @@ import {MatListModule} from '@angular/material/list';
 import {LoginModule } from './login/login.module';
 import {CorporateModule } from './corporate/corporate.module';
 import {AllinoneModule } from './allinone/allinone.module';
-import { OffineComponent } from './offine/offine.component';
+import { OfflineModule } from './offline/offline.module';
+
+
 
 
 @NgModule({
@@ -44,7 +46,6 @@ import { OffineComponent } from './offine/offine.component';
     ReactiveformComponent,
     TemplateComponent,
     MaterialsComponent,
-    OffineComponent
     ],
 
 
@@ -73,8 +74,8 @@ import { OffineComponent } from './offine/offine.component';
     MatListModule,
     LoginModule,
     CorporateModule,
-    AllinoneModule
-
+    AllinoneModule,
+    OfflineModule
   ],
 
   providers: [],

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OffineComponent } from './offine.component';
+import { OfflineComponent } from './offline.component';
 
-describe('OffineComponent', () => {
-  let component: OffineComponent;
-  let fixture: ComponentFixture<OffineComponent>;
+describe('OfflineComponent', () => {
+  let component: OfflineComponent;
+  let fixture: ComponentFixture<OfflineComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OffineComponent ]
+      declarations: [ OfflineComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OffineComponent);
+    fixture = TestBed.createComponent(OfflineComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

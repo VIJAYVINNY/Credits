@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OffineComponent } from '../offine/offine.component';
+import { OfflineComponent } from './offline.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 @NgModule({
-  declarations: [OffineComponent],
+  declarations: [OfflineComponent],
   imports: [
-    CommonModule
+    CommonModule,MatToolbarModule,
+    
   ]
 })
 export class OfflineModule { }
