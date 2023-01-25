@@ -15,6 +15,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { AllinoneComponent } from './allinone.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     ListEmployeeComponent,
     ImplementingComponent,
     LoginComponent,
-    MethodsComponent],
+    MethodsComponent,
+    AllinoneComponent],
 
 
   imports: [
