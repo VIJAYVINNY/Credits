@@ -1,5 +1,5 @@
   <!-- <p>Congratulations You are Successfully working on pagenation</p> -->
-<h1 mat-dialog-title>Add Product Data</h1>
+<h1 mat-dialog-title>Add Product Data</h1>&nbsp;
 
 <div mat-dialog-content>
 
@@ -8,10 +8,44 @@
       <input matInput placeholder="placeholder">
   </mat-form-field>
 
-  <mat-label>List</mat-label>
-<mat-select>
-  <mat-option *ngFor="let food of foods" [value]="food.value">
-    {{food.viewValue}}
+  <mat-form-field appearance="outline">
+  <mat-label>List Of Vehicles</mat-label>
+<mat-select placeholder="category">
+  <mat-option *ngFor="let v of vehicles" [value]="v.value">
+    {{v.viewValue}}
   </mat-option>
 </mat-select>
+</mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+
+  <label for=""><h2>Quality:</h2></label>
+  <mat-radio-group  aria-labelledby="example-radio-group-label"
+  class="example-radio-group">
+    <mat-radio-button class="example-radio-button" *ngFor="let q of quality" [value]="q">
+{{q}}
+    </mat-radio-button>
+  </mat-radio-group>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Price</mat-label>
+    <input matInput type="number" placeholder="price">
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+  <mat-label>Comments</mat-label>
+  <textarea matInput></textarea>
+</mat-form-field>
+
+<div [align]="'end'">
+  <button mat-raised-button color="primary" mat-dialog-close>Close</button>&nbsp;
+  <button mat-raised-button color="accent">Save</button>
+</div>
 </div>
