@@ -1,4 +1,4 @@
- export interface Food {
+ export interface Vehicles {
   value: string;
   viewValue: string;
 }
