@@ -34,6 +34,9 @@ import {AllinoneModule } from './allinone/allinone.module';
 import { OfflineModule } from './offline/offline.module';
 import { DialogModule } from './dialog/dialog.module';
 import { WyderComponent } from './wyder/wyder.component';
+import { CounterComponent } from './counter/counter/counter.component';
+import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
+import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 
 
 
@@ -48,6 +51,9 @@ import { WyderComponent } from './wyder/wyder.component';
     TemplateComponent,
     MaterialsComponent,
     WyderComponent,
+    CounterComponent,
+    CounterOutputComponent,
+    CounterButtonsComponent,
 
     ],
 

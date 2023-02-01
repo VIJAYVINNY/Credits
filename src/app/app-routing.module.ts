@@ -17,6 +17,8 @@ import { MaterialsComponent } from './materials/materials.component';
 import { MaterialsModule } from './materials/materials.module';
 import { MethodsComponent } from './methods/methods.component';
 import { OfflineComponent } from './offline/offline.component';
+import { CounterComponent } from './counter/counter/counter.component';
+import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
 
 
 const routes: Routes = [
@@ -36,6 +38,7 @@ const routes: Routes = [
   {path:'arcreact',component:ArcreactComponent},
   {path:'materials',component:MaterialsComponent},
   {path:'offline',component:OfflineComponent },
+  {path:'counter',component:CounterComponent},
 
 
 
