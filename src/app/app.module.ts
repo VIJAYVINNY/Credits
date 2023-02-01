@@ -33,6 +33,7 @@ import {CorporateModule } from './corporate/corporate.module';
 import {AllinoneModule } from './allinone/allinone.module';
 import { OfflineModule } from './offline/offline.module';
 import { DialogModule } from './dialog/dialog.module';
+import { WyderComponent } from './wyder/wyder.component';
 
 
 
@@ -46,6 +47,7 @@ import { DialogModule } from './dialog/dialog.module';
     ReactiveformComponent,
     TemplateComponent,
     MaterialsComponent,
+    WyderComponent,
 
     ],
 
