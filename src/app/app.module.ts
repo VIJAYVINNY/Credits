@@ -85,7 +85,8 @@ import { CounterButtonsComponent } from './counter/counter-buttons/counter-butto
     LoginModule,
     CorporateModule,
     AllinoneModule,
-    OfflineModule
+    OfflineModule,
+    
   ],
 
   providers: [],
