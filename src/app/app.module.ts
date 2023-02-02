@@ -33,6 +33,9 @@ import {CorporateModule } from './corporate/corporate.module';
 import {AllinoneModule } from './allinone/allinone.module';
 import { OfflineModule } from './offline/offline.module';
 import { DialogModule } from './dialog/dialog.module';
+import { CounterComponent } from './counter/counter/counter.component';
+import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
+import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 
 
 
@@ -46,6 +49,9 @@ import { DialogModule } from './dialog/dialog.module';
     ReactiveformComponent,
     TemplateComponent,
     MaterialsComponent,
+    CounterComponent,
+    CounterOutputComponent,
+    CounterButtonsComponent,
 
     ],
 
@@ -77,7 +83,8 @@ import { DialogModule } from './dialog/dialog.module';
     LoginModule,
     CorporateModule,
     AllinoneModule,
-    OfflineModule
+    OfflineModule,
+
   ],
 
   providers: [],
