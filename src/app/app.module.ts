@@ -38,6 +38,7 @@ import { CounterOutputComponent } from './counter/counter-output/counter-output.
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './counter/state/counter.reducer';
+import { CustomCounterInputComponent } from './custom-counter-input/custom-counter-input.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { counterReducer } from './counter/state/counter.reducer';
     CounterComponent,
     CounterOutputComponent,
     CounterButtonsComponent,
+    CustomCounterInputComponent,
 
     ],
 
