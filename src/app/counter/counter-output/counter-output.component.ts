@@ -13,5 +13,5 @@ export class CounterOutputComponent implements OnInit {
 
   ngOnInit(): void {
   }
- 
+
 }

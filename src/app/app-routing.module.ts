@@ -39,9 +39,6 @@ const routes: Routes = [
   {path:'materials',component:MaterialsComponent},
   {path:'offline',component:OfflineComponent },
   {path:'counter',component:CounterComponent},
-
-
-
 ];
 
 

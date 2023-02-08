@@ -36,7 +36,7 @@ import { DialogModule } from './dialog/dialog.module';
 import { CounterComponent } from './counter/counter/counter.component';
 import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
-
+import { StoreModule } from '@ngrx/store';
 
 
 @NgModule({
