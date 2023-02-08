@@ -899,20 +899,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 class CounterButtonsComponent {
-    // @Output() increment=new EventEmitter<void>() ;
-    // @Output() decrement=new EventEmitter<void>();
-    // @Output() reset=new EventEmitter<void>();
     constructor(store) {
         this.store = store;
+        this.increment = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.decrement = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.reset = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
     }
     ngOnInit() { }
-    onIncrement() { }
-    onDecrement() { }
-    onReset() { }
+    onIncrement() {
+        this.increment.emit();
+    }
+    onDecrement() {
+        this.decrement.emit();
+    }
+    onReset() {
+        this.reset.emit();
+    }
 }
 CounterButtonsComponent.ɵfac = function CounterButtonsComponent_Factory(t) { return new (t || CounterButtonsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["Store"])); };
-CounterButtonsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CounterButtonsComponent, selectors: [["app-counter-buttons"]], decls: 9, vars: 0, consts: [[1, "btn", "btn-primary", 3, "click"], [1, "btn", "btn-secondary", 3, "click"], [1, "btn", "btn-warning", 3, "click"]], template: function CounterButtonsComponent_Template(rf, ctx) { if (rf & 1) {
+CounterButtonsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CounterButtonsComponent, selectors: [["app-counter-buttons"]], outputs: { increment: "increment", decrement: "decrement", reset: "reset" }, decls: 9, vars: 0, consts: [[1, "btn", "btn-primary", 3, "click"], [1, "btn", "btn-secondary", 3, "click"], [1, "btn", "btn-warning", 3, "click"]], template: function CounterButtonsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CounterButtonsComponent_Template_button_click_1_listener() { return ctx.onIncrement(); });
@@ -937,7 +944,13 @@ CounterButtonsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
                 templateUrl: './counter-buttons.component.html',
                 styleUrls: ['./counter-buttons.component.scss']
             }]
-    }], function () { return [{ type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["Store"] }]; }, null); })();
+    }], function () { return [{ type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["Store"] }]; }, { increment: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], decrement: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], reset: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }] }); })();
 
 
 /***/ }),
