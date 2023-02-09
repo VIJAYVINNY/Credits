@@ -9,15 +9,18 @@ import { EventEmitter } from '@angular/core';
   styleUrls: ['./counter-buttons.component.scss']
 })
 export class CounterButtonsComponent implements OnInit {
+
   @Output() increment=new EventEmitter<void>() ;
   @Output() decrement=new EventEmitter<void>();
   @Output() reset=new EventEmitter<void>();
+
 constructor() { }
+
 ngOnInit(): void {}
+
 onIncrement(): void{
   this.increment.emit();
-
-    }
+ }
 
     onDecrement(){
   this.decrement.emit();
