@@ -11,7 +11,7 @@ import { customIncrement } from '../state/counter.actions';
 
 export class CustomCounterInputComponent implements OnInit {
 
-value:number=0;;
+value:number=0;
 
   constructor(private store:Store<any>) { }
 // constructor(private store:Store){}
