@@ -980,6 +980,66 @@ AllserviceService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
 
 /***/ }),
 
+/***/ "Ntsu":
+/*!********************************************************************************!*\
+  !*** ./src/app/counter/custom-counter-input/custom-counter-input.component.ts ***!
+  \********************************************************************************/
+/*! exports provided: CustomCounterInputComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomCounterInputComponent", function() { return CustomCounterInputComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _state_counter_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../state/counter.actions */ "zStQ");
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ngrx/store */ "tqRt");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+class CustomCounterInputComponent {
+    constructor(store) {
+        this.store = store;
+        this.value = 0;
+    }
+    ;
+    // constructor(private store:Store){}
+    ngOnInit() { }
+    onAdd() {
+        // console.log(this.value);
+        this.store.dispatch(Object(_state_counter_actions__WEBPACK_IMPORTED_MODULE_1__["customIncrement"])({ value: this.value }));
+    }
+}
+CustomCounterInputComponent.ɵfac = function CustomCounterInputComponent_Factory(t) { return new (t || CustomCounterInputComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["Store"])); };
+CustomCounterInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CustomCounterInputComponent, selectors: [["app-custom-counter-input"]], decls: 5, vars: 1, consts: [["type", "text", "placeholder", "Ente The Value", 3, "ngModel", "ngModelChange"], [1, "btn", "btn-success", 3, "click"]], template: function CustomCounterInputComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function CustomCounterInputComponent_Template_input_ngModelChange_1_listener($event) { return ctx.value = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "\u00A0 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CustomCounterInputComponent_Template_button_click_3_listener() { return ctx.onAdd(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Add");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.value);
+    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjdXN0b20tY291bnRlci1pbnB1dC5jb21wb25lbnQuc2NzcyJ9 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CustomCounterInputComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-custom-counter-input',
+                templateUrl: './custom-counter-input.component.html',
+                styleUrls: ['./custom-counter-input.component.scss']
+            }]
+    }], function () { return [{ type: _ngrx_store__WEBPACK_IMPORTED_MODULE_2__["Store"] }]; }, null); })();
+
+
+/***/ }),
+
 /***/ "ODxk":
 /*!********************************************************!*\
   !*** ./src/app/reactiveform/reactiveform.component.ts ***!
@@ -1466,6 +1526,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _counter_output_counter_output_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../counter-output/counter-output.component */ "5IGf");
 /* harmony import */ var _counter_buttons_counter_buttons_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../counter-buttons/counter-buttons.component */ "K1AE");
+/* harmony import */ var _custom_counter_input_custom_counter_input_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../custom-counter-input/custom-counter-input.component */ "Ntsu");
+
 
 
 
@@ -1487,7 +1549,7 @@ class CounterComponent {
     }
 }
 CounterComponent.ɵfac = function CounterComponent_Factory(t) { return new (t || CounterComponent)(); };
-CounterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CounterComponent, selectors: [["app-counter"]], decls: 9, vars: 2, consts: [[1, "row"], [1, "col-md-12"], [1, "my-3"], [3, "counter"], [3, "increment", "decrement", "reset"]], template: function CounterComponent_Template(rf, ctx) { if (rf & 1) {
+CounterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CounterComponent, selectors: [["app-counter"]], decls: 11, vars: 2, consts: [[1, "row"], [1, "col-md-12"], [1, "my-3"], [3, "counter"], [3, "increment", "decrement", "reset"]], template: function CounterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h3");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
@@ -1503,6 +1565,9 @@ CounterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("increment", function CounterComponent_Template_app_counter_buttons_increment_8_listener() { return ctx.onIncrement(); })("decrement", function CounterComponent_Template_app_counter_buttons_decrement_8_listener() { return ctx.onDecrement(); })("reset", function CounterComponent_Template_app_counter_buttons_reset_8_listener() { return ctx.onReset(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "app-custom-counter-input");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -1510,7 +1575,7 @@ CounterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Counter is:", ctx.counter, "");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("counter", ctx.counter);
-    } }, directives: [_counter_output_counter_output_component__WEBPACK_IMPORTED_MODULE_1__["CounterOutputComponent"], _counter_buttons_counter_buttons_component__WEBPACK_IMPORTED_MODULE_2__["CounterButtonsComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb3VudGVyLmNvbXBvbmVudC5zY3NzIn0= */"] });
+    } }, directives: [_counter_output_counter_output_component__WEBPACK_IMPORTED_MODULE_1__["CounterOutputComponent"], _counter_buttons_counter_buttons_component__WEBPACK_IMPORTED_MODULE_2__["CounterButtonsComponent"], _custom_counter_input_custom_counter_input_component__WEBPACK_IMPORTED_MODULE_3__["CustomCounterInputComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb3VudGVyLmNvbXBvbmVudC5zY3NzIn0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CounterComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -1676,6 +1741,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _counter_counter_counter_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./counter/counter/counter.component */ "WbRV");
 /* harmony import */ var _counter_counter_output_counter_output_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./counter/counter-output/counter-output.component */ "5IGf");
 /* harmony import */ var _counter_counter_buttons_counter_buttons_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./counter/counter-buttons/counter-buttons.component */ "K1AE");
+/* harmony import */ var _counter_custom_counter_input_custom_counter_input_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./counter/custom-counter-input/custom-counter-input.component */ "Ntsu");
+
 
 
 
@@ -1756,7 +1823,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _materials_materials_component__WEBPACK_IMPORTED_MODULE_12__["MaterialsComponent"],
         _counter_counter_counter_component__WEBPACK_IMPORTED_MODULE_34__["CounterComponent"],
         _counter_counter_output_counter_output_component__WEBPACK_IMPORTED_MODULE_35__["CounterOutputComponent"],
-        _counter_counter_buttons_counter_buttons_component__WEBPACK_IMPORTED_MODULE_36__["CounterButtonsComponent"]], imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
+        _counter_counter_buttons_counter_buttons_component__WEBPACK_IMPORTED_MODULE_36__["CounterButtonsComponent"],
+        _counter_custom_counter_input_custom_counter_input_component__WEBPACK_IMPORTED_MODULE_37__["CustomCounterInputComponent"]], imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
         _arcreact_arcreact_module__WEBPACK_IMPORTED_MODULE_26__["ArcreactModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
         _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_15__["MatButtonToggleModule"],
@@ -1798,6 +1866,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _counter_counter_counter_component__WEBPACK_IMPORTED_MODULE_34__["CounterComponent"],
                     _counter_counter_output_counter_output_component__WEBPACK_IMPORTED_MODULE_35__["CounterOutputComponent"],
                     _counter_counter_buttons_counter_buttons_component__WEBPACK_IMPORTED_MODULE_36__["CounterButtonsComponent"],
+                    _counter_custom_counter_input_custom_counter_input_component__WEBPACK_IMPORTED_MODULE_37__["CustomCounterInputComponent"],
                 ],
                 imports: [_app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
                     _arcreact_arcreact_module__WEBPACK_IMPORTED_MODULE_26__["ArcreactModule"],
@@ -2660,6 +2729,29 @@ LoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
                 styleUrls: ['./login.component.scss']
             }]
     }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "zStQ":
+/*!**************************************************!*\
+  !*** ./src/app/counter/state/counter.actions.ts ***!
+  \**************************************************/
+/*! exports provided: increment, decrement, reset, customIncrement */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "increment", function() { return increment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "decrement", function() { return decrement; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reset", function() { return reset; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "customIncrement", function() { return customIncrement; });
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ngrx/store */ "tqRt");
+
+const increment = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('increment');
+const decrement = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('decrement');
+const reset = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('reset');
+const customIncrement = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('customincrement', Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["props"])());
 
 
 /***/ }),
