@@ -1004,7 +1004,6 @@ class CustomCounterInputComponent {
         this.store = store;
         this.value = 0;
     }
-    ;
     // constructor(private store:Store){}
     ngOnInit() { }
     onAdd() {
@@ -2748,9 +2747,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "customIncrement", function() { return customIncrement; });
 /* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ngrx/store */ "tqRt");
 
-const increment = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('increment');
-const decrement = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('decrement');
-const reset = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('reset');
+const increment = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('[CounterComponent] increment');
+const decrement = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('[CounterComponent] decrement');
+const reset = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('[CounterComponent] reset');
 const customIncrement = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createAction"])('customincrement', Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["props"])());
 
 
