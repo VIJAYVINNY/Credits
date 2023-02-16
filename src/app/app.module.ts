@@ -38,6 +38,7 @@ import { CounterOutputComponent } from './counter/counter-output/counter-output.
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { CustomCounterInputComponent } from './counter/custom-counter-input/custom-counter-input.component';
 import { MubeenComponent } from './mubeen/mubeen.component';
+import { StoreModule } from '@ngrx/store';
 
 
 
@@ -56,7 +57,6 @@ import { MubeenComponent } from './mubeen/mubeen.component';
     CounterButtonsComponent,
     CustomCounterInputComponent,
     MubeenComponent,
-
     ],
 
 
@@ -88,6 +88,7 @@ import { MubeenComponent } from './mubeen/mubeen.component';
     CorporateModule,
     AllinoneModule,
     OfflineModule,
+    StoreModule.forRoot({}, {}),
 
   ],
 
