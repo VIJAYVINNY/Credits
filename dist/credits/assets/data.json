@@ -1,0 +1,145 @@
+{
+    "details": [{
+            "id": 1
+        },
+        {
+            "id": 2,
+            "Firstname": "Ajay",
+            "position": "Sr.Developer"
+        },
+        {
+            "id": 3,
+            "Firstname": "Sanjay",
+            "position": "Jr.Developer"
+        },
+        {
+            "id": 4,
+            "Firstname": "Pranay",
+            "position": "FullStack Developer"
+        },
+        {
+            "id": 5,
+            "Firstname": "Prakhayath",
+            "position": "Project Lead"
+        },
+        {
+            "FirstName": "Vijaya Rani",
+            "position": "Team Lead",
+            "id": 6
+        },
+        {
+            "FirstName": "Vijaya Rani",
+            "position": "Team Lead",
+            "id": 7
+        },
+        {
+            "FirstName": "Ruchitha",
+            "position": "Jr.Developer",
+            "id": 8
+        },
+        {
+            "id": 9
+        },
+        {
+            "id": 10
+        },
+        {
+            "FirstName": "Venky",
+            "position": "Admin",
+            "id": 11
+        },
+        {
+            "id": 12
+        },
+        {
+            "id": 13
+        }
+    ],
+
+    "Employee ": [{
+            "id": 1234,
+            "name": "Vijaya Rani ",
+            "gender": "Female",
+            "contactPreference": "Email",
+            "email ": "vijayarani@softpath.net",
+            "phoneNumber ": 9652733447,
+            "DOB": "10 / 25 / 1988 ",
+            "position ": "Team Lead ",
+            " package": "15LPA",
+            "imageUrl": "assets / images / mary.png "
+
+        },
+        {
+            "id": 1235,
+            "name": "Padma Kuana ",
+            "gender": "Female",
+            "contactPreference": "Email",
+            "email ": "padmakuna@softpath.net",
+            "phoneNumber ": 9652733557,
+            "DOB": "10 / 25 / 1985 ",
+            "position ": "AQ Lead ",
+            " package": "14LPA",
+            "imageUrl": "assets / images / mary.png "
+        },
+        {
+            "id": 1236,
+            "name": " Gireesh Kapila",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email ": "gireeshkapila@softpath.net",
+            "phoneNumber ": 9652733667,
+            "DOB": "10 / 25 / 1980 ",
+            "position ": "Senior Architecture ",
+            " package": "22LPA",
+            "imageUrl": "assets / images / john.png "
+        },
+        {
+            "id": 1237,
+            "name": "Harish Kumar",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email ": "harishkumar@softpath.net",
+            "phoneNumber ": 9652733007,
+            "DOB": "10 / 25 / 1985",
+            "position ": "Associate Director",
+            " package": "33LPA",
+            "imageUrl": "assets / images / moris.png "
+        },
+        {
+            "id": 1238,
+            "name": "Phalguna Kumar ",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email ": "phalgunakumar@softpath.net",
+            "phoneNumber ": 9652722447,
+            "DOB": "10 / 25 / 1982",
+            "position ": "Team Lead ",
+            " package": "22LPA",
+            "imageUrl": "assets / images / john.png "
+        },
+        {
+            "id": 1239,
+            "name": "Rajeev patnaik ",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email ": "rajeevpantnaik@softpath.net",
+            "phoneNumber ": 9652722667,
+            "DOB": "10 / 25 / 1978 ",
+            "position ": "Python Developer",
+            " package": "15LPA",
+            "imageUrl": "assets / images / mary.png "
+        }, {
+            "id": 1240,
+            "name": "Chidurala Divya ",
+            "gender": "Female",
+            "contactPreference": "Email",
+            "email ": "divyachidurala@softpath.net",
+            "phoneNumber ": 9656589477,
+            "DOB": "10 / 25 / 1993 ",
+            "position ": "Associate Engineer",
+            " package": "15LPA",
+            "imageUrl": "assets / images / mary.png "
+        }
+    ]
+
+}
