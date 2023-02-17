@@ -14,8 +14,6 @@ import { MaterialsComponent } from './materials/materials.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatCardModule} from '@angular/material/card';
@@ -39,6 +37,8 @@ import { CounterButtonsComponent } from './counter/counter-buttons/counter-butto
 import { CustomCounterInputComponent } from './counter/custom-counter-input/custom-counter-input.component';
 import { MubeenComponent } from './mubeen/mubeen.component';
 import { StoreModule } from '@ngrx/store';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
