@@ -35,7 +35,6 @@ import { CounterComponent } from './counter/counter/counter.component';
 import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { CustomCounterInputComponent } from './counter/custom-counter-input/custom-counter-input.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -53,6 +52,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CounterOutputComponent,
     CounterButtonsComponent,
     CustomCounterInputComponent,
+
     ],
 
 
@@ -82,7 +82,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CorporateModule,
     AllinoneModule,
     OfflineModule,
-    BrowserAnimationsModule,
 
   ],
 
