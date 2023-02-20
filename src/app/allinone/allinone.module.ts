@@ -34,7 +34,7 @@ import { AllinoneComponent } from './allinone.component';
     MatListModule,MatIconModule,MatFormFieldModule,
     MatSelectModule,MatGridListModule,
     MatDatepickerModule,MatNativeDateModule,
-    MatTooltipModule
+    MatTooltipModule,
   ]
 })
 export class AllinoneModule { }

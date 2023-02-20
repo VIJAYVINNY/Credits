@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +10,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { TemplateComponent } from './template/template.component';
 import { MaterialsComponent } from './materials/materials.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
@@ -37,8 +35,6 @@ import { CounterComponent } from './counter/counter/counter.component';
 import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { CustomCounterInputComponent } from './counter/custom-counter-input/custom-counter-input.component';
-import { MubeenComponent } from './mubeen/mubeen.component';
-import { StoreModule } from '@ngrx/store';
 
 
 
@@ -56,7 +52,7 @@ import { StoreModule } from '@ngrx/store';
     CounterOutputComponent,
     CounterButtonsComponent,
     CustomCounterInputComponent,
-    MubeenComponent,
+
     ],
 
 
@@ -68,13 +64,11 @@ import { StoreModule } from '@ngrx/store';
     MatIconModule,
     MatBadgeModule,
     DialogModule,
-    BrowserModule,
     MatProgressSpinnerModule,
     MatCardModule,
     MatTooltipModule,
     HttpClientModule,
     MatRadioModule,
-    BrowserAnimationsModule,
     MatSliderModule,
     ReactiveFormsModule,
     MatToolbarModule,
@@ -88,7 +82,6 @@ import { StoreModule } from '@ngrx/store';
     CorporateModule,
     AllinoneModule,
     OfflineModule,
-    StoreModule.forRoot({}, {}),
 
   ],
 
