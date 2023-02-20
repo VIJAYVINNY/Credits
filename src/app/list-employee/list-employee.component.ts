@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from './models/employee.model';
-import {FormControl} from '@angular/forms';
+import {UntypedFormControl} from '@angular/forms';
 import {TooltipPosition} from '@angular/material/tooltip';
 
 @Component({
@@ -10,7 +10,7 @@ import {TooltipPosition} from '@angular/material/tooltip';
 })
 export class ListEmployeeComponent implements OnInit {
   positionOptions: TooltipPosition[] = ['below', 'above', 'left', 'right'];
-  position = new FormControl(this.positionOptions[0]);
+  position = new UntypedFormControl(this.positionOptions[0]);
 
   value = 'Clear me';
   constructor() { }

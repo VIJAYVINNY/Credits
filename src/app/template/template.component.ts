@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, NgForm } from '@angular/forms';
+import { UntypedFormBuilder, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-template',
@@ -14,7 +14,7 @@ export class TemplateComponent implements OnInit {
   address: string = '';
 
   // datatypes:types=new this.datatypes();
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: UntypedFormBuilder) { }
 
   addDetails(formValue: NgForm) {
     console.log(formValue.value);

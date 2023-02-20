@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -15,15 +15,15 @@ export class TodoComponent implements OnInit {
 
 
 
-  registrationForm=new FormGroup({
-    userName:new FormControl(''),
-    password:new FormControl(''),
-    confirmPassword:new FormControl(''),
+  registrationForm=new UntypedFormGroup({
+    userName:new UntypedFormControl(''),
+    password:new UntypedFormControl(''),
+    confirmPassword:new UntypedFormControl(''),
 
-    address:new FormGroup({
-      city:new FormControl(''),
-      state:new FormControl(''),
-      postalNo:new FormControl(''),
+    address:new UntypedFormGroup({
+      city:new UntypedFormControl(''),
+      state:new UntypedFormControl(''),
+      postalNo:new UntypedFormControl(''),
     })
   });
 

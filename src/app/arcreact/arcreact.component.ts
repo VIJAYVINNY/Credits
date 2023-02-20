@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, UntypedFormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-arcreact',
@@ -9,8 +9,8 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 export class ArcreactComponent implements OnInit {
 
 
-  loanInfoForm!: FormGroup;
-  constructor(public fb: FormBuilder ) { }
+  loanInfoForm!: UntypedFormGroup;
+  constructor(public fb: UntypedFormBuilder ) { }
 
   ngOnInit(): void {
 
@@ -21,13 +21,13 @@ export class ArcreactComponent implements OnInit {
     // })
 
     this.loanInfoForm = this.fb.group({
-      'loanName': new FormControl('',Validators.compose([
+      'loanName': new UntypedFormControl('',Validators.compose([
         Validators.required,
         Validators.minLength(7),
       Validators.maxLength(15)
     ])),
-      'loanType': new FormControl(),
-      'description': new FormControl()
+      'loanType': new UntypedFormControl(),
+      'description': new UntypedFormControl()
     })
 
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, FormControl} from '@angular/forms';
+import {FormGroup, UntypedFormControl} from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 
@@ -13,7 +13,7 @@ export class CorporateComponent implements OnInit {
 
   selectedvalue: string | undefined;
 
-  disableSelect = new FormControl(false);
+  disableSelect = new UntypedFormControl(false);
 
   constructor(private snackBar:MatSnackBar) { }
 
